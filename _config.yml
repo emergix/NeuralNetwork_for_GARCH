@@ -1,6 +1,7 @@
 title: "NeuralNetwork_for_GARCH"
 description: "GARCH + Deep Learning applications in quantitative finance"
 remote_theme: "mmistakes/minimal-mistakes"
+avatar: "/assets/images/avatar.png"
 plugins:
   - jekyll-include-cache
   - jekyll-feed
