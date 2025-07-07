@@ -15,7 +15,7 @@ author:
 
 markdown: kramdown
 highlighter: rouge
-theme: null
+
 
 # Structure du site
 defaults:
