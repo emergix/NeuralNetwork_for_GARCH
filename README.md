@@ -64,4 +64,13 @@ B --> C[GARCH Parameters]
 C --> D[Initialize Heston/SABR]
 D --> E[Fast Monte Carlo Pricing]
 
+```
+## 🛠️ Technical Stack
+
+This blog will share:
+- Python notebooks using `PyTorch` or `TensorFlow`
+- Exploratory backtests and volatility forecasts
+- Visual insights via `matplotlib` or `plotly`
+- Integration examples for quant desks
+
 
