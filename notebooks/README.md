@@ -7,6 +7,44 @@ This directory contains practical implementations of Neural Network-based GARCH 
 ## 🧠 Available Notebooks
 
 ### 1. GARCH Calibration with Neural Networks
+
+## 📊 The Heston Stochastic Volatility Model
+
+The **Heston model** is a widely used stochastic volatility model in quantitative finance, particularly for pricing derivatives. Unlike Black-Scholes, which assumes constant volatility, Heston introduces a **random process for volatility itself**, capturing market phenomena such as the volatility smile and clustering.
+
+### 🧮 Model Dynamics
+
+The asset price \( S_t \) and its variance \( v_t \) follow the system of stochastic differential equations:
+
+\[
+\begin{aligned}
+dS_t &= \mu S_t\,dt + \sqrt{v_t} S_t\,dW_t^S \\\\
+dv_t &= \kappa(\theta - v_t)\,dt + \sigma \sqrt{v_t}\,dW_t^v
+\end{aligned}
+\]
+
+- \( \mu \) : drift of the asset  
+- \( v_t \) : instantaneous variance  
+- \( \kappa \) : rate of mean reversion  
+- \( \theta \) : long-term variance  
+- \( \sigma \) : volatility of volatility  
+- \( W_t^S \), \( W_t^v \) : Brownian motions with correlation \( \rho \)
+
+### 🔍 Key Features
+
+- **Mean-reverting variance** captures realistic volatility behavior  
+- **Closed-form solution** for European options via Fourier inversion  
+- **Flexible calibration** to volatility surfaces (smile/skew)
+
+### 📚 Applications
+
+The Heston model is commonly used for:
+- Pricing European and exotic options  
+- Risk management and scenario analysis  
+- Calibrating implied volatility surfaces
+
+
+
 [`garch_calibration.ipynb`](./garch_calibration.ipynb)  
 *End-to-end workflow for calibrating GARCH parameters using neural networks*
 
