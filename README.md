@@ -7,9 +7,9 @@
 This blog explores how neural networks can be used to calibrate the parameters of GARCH models, and how this approach can bring real value to practitioners in finance.
 
 We aim to:
-- Present the theoretical foundations behind GARCH models and their calibration.
-- Illustrate how neural network methods outperform traditional optimization in speed and robustness.
-- Show practical financial use cases in **asset management** and **exotic options trading**.
+- Present the theoretical foundations behind GARCH models and their calibration
+- Illustrate how neural network methods outperform traditional optimization in speed and robustness
+- Show practical financial use cases in **asset management** and **exotic options trading**
 
 ---
 
@@ -23,19 +23,18 @@ Financial volatility modeling is fundamental to modern finance, yet traditional 
 
 Neural networks offer a transformative solution: **fast, robust, and scalable GARCH parameter calibration**. This blog explores practical applications across two critical financial domains.
 
-
+---
 
 ## 1. Asset Management Application: Optimizing Portfolios Under Dynamic Volatility Constraints
 
 ### The Challenge
 Portfolio managers need real-time volatility forecasts to:
+- Provide real-time volatility estimates for portfolio risk assessment
+- Improve Value-at-Risk (VaR) and Conditional VaR (CVaR) calculations
+- Feed volatility forecasts into portfolio optimization algorithms
 - Calculate market risk metrics (VaR, CVaR)
 - Optimize allocations using Markowitz/Black-Litterman models
 - React to sudden market regime shifts
-- Provide real-time volatility estimates for portfolio risk assessment,
-- Improve Value-at-Risk (VaR) and CVaR calculations,
-- Feed volatility forecasts into portfolio optimization algorithms.
-
 
 ### Neural Network Advantages
 | Feature | Benefit |
@@ -58,17 +57,12 @@ Exotic options pricing requires precise volatility modeling where:
 - Traditional calibration creates trading desk bottlenecks
 
 ### Neural Network Solution
-- A **pre-calibration tool** for stochastic volatility models (e.g. Heston, SABR),
-- A **quick snapshot of volatility clustering** under market stress,
-- A way to bootstrap model parameters for pricing structured products.
 ```mermaid
 graph LR
 A[Raw Price Data] --> B[NN Calibration]
 B --> C[GARCH Parameters]
 C --> D[Initialize Heston/SABR]
 D --> E[Fast Monte Carlo Pricing]
-
----
 
 ##  Technical Stack
 
