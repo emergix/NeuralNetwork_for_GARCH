@@ -32,6 +32,10 @@ Portfolio managers need real-time volatility forecasts to:
 - Calculate market risk metrics (VaR, CVaR)
 - Optimize allocations using Markowitz/Black-Litterman models
 - React to sudden market regime shifts
+- Provide real-time volatility estimates for portfolio risk assessment,
+- Improve Value-at-Risk (VaR) and CVaR calculations,
+- Feed volatility forecasts into portfolio optimization algorithms.
+
 
 ### Neural Network Advantages
 | Feature | Benefit |
@@ -54,6 +58,9 @@ Exotic options pricing requires precise volatility modeling where:
 - Traditional calibration creates trading desk bottlenecks
 
 ### Neural Network Solution
+- A **pre-calibration tool** for stochastic volatility models (e.g. Heston, SABR),
+- A **quick snapshot of volatility clustering** under market stress,
+- A way to bootstrap model parameters for pricing structured products.
 ```mermaid
 graph LR
 A[Raw Price Data] --> B[NN Calibration]
@@ -62,23 +69,6 @@ C --> D[Initialize Heston/SABR]
 D --> E[Fast Monte Carlo Pricing]
 ---------
 
-
-
-## 🏦 Use Cases in Investment Banking
-
-### 💼 Asset Management
-Neural network-based GARCH calibration can:
-- Provide real-time volatility estimates for portfolio risk assessment,
-- Improve Value-at-Risk (VaR) and CVaR calculations,
-- Feed volatility forecasts into portfolio optimization algorithms.
-
-### 📉 Exotic Options Trading
-On the trading floor, this method is useful as:
-- A **pre-calibration tool** for stochastic volatility models (e.g. Heston, SABR),
-- A **quick snapshot of volatility clustering** under market stress,
-- A way to bootstrap model parameters for pricing structured products.
-
----<img width="2912" height="666" alt="deepseek_mermaid_20250723_e4087b" src="https://github.com/user-attachments/assets/72dabb6d-7deb-4f15-b61e-132ee8caf2ec" />
 
 
 ## 🛠️ Technical Stack
