@@ -23,7 +23,7 @@ Financial volatility modeling is fundamental to modern finance, yet traditional 
 
 Neural networks offer a transformative solution: **fast, robust, and scalable GARCH parameter calibration**. This blog explores practical applications across two critical financial domains.
 
----
+
 
 ## 1. Asset Management Application: Optimizing Portfolios Under Dynamic Volatility Constraints
 
@@ -67,7 +67,6 @@ A[Raw Price Data] --> B[NN Calibration]
 B --> C[GARCH Parameters]
 C --> D[Initialize Heston/SABR]
 D --> E[Fast Monte Carlo Pricing]
----------
 
 
 
