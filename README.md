@@ -73,13 +73,6 @@ This blog will share:
 - Visual insights via `matplotlib` or `plotly`
 - Integration examples for quant desks
 
-## 🧾 Blog Structure
-
-- [`/posts`](/posts) → Markdown-based blog entries and tutorials
-- [`/notebooks`](/notebooks) → Code notebooks illustrating each concept
-- [`/figures`](/figures) → Visual summaries and plots
-- [`/data`](/data) → (Optional) Sample datasets or references to public data
-
 ---
 
 ## 🧾 Blog Structure
