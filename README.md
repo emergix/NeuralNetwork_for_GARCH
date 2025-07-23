@@ -27,7 +27,8 @@ On the trading floor, this method is useful as:
 - A **quick snapshot of volatility clustering** under market stress,
 - A way to bootstrap model parameters for pricing structured products.
 
----
+---<img width="2912" height="666" alt="deepseek_mermaid_20250723_e4087b" src="https://github.com/user-attachments/assets/72dabb6d-7deb-4f15-b61e-132ee8caf2ec" />
+
 
 ## 🛠️ Technical Stack
 
