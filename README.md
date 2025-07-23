@@ -68,7 +68,7 @@ B --> C[GARCH Parameters]
 C --> D[Initialize Heston/SABR]
 D --> E[Fast Monte Carlo Pricing]
 
-
+---
 
 ##  Technical Stack
 
