@@ -36,6 +36,13 @@ dv_t &= \kappa(\theta - v_t)\,dt + \sigma \sqrt{v_t}\,dW_t^v
 - **Closed-form solution** for European options via Fourier inversion  
 - **Flexible calibration** to volatility surfaces (smile/skew)
 
+### 📄 Calibration Example
+
+See the full calibration process using historical Air Liquide data:
+
+👉 [`README_GARCH_Calibration.md`](./README_GARCH_Calibration.md)
+
+
 ### 📚 Applications
 
 The Heston model is commonly used for:
