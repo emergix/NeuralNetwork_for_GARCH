@@ -70,7 +70,7 @@ D --> E[Fast Monte Carlo Pricing]
 
 
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 This blog will share:
 - Python notebooks using `PyTorch` or `TensorFlow`,
@@ -80,7 +80,7 @@ This blog will share:
 
 ---
 
-## 🧾 Blog Structure
+##  Blog Structure
 
 - [`/posts`](/posts) → Markdown-based blog entries and tutorials
 - [`/notebooks`](/notebooks) → Code notebooks illustrating each concept
@@ -89,13 +89,13 @@ This blog will share:
 
 ---
 
-## 🚀 Get Involved
+##  Get Involved
 
 Feel free to fork, star or contribute ideas! Whether you're a quant, a data scientist, or a curious student — insights and suggestions are welcome.
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
 Created by [Olivier Croissant](https://github.com/croissant-olivier)
 
