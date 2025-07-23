@@ -65,15 +65,3 @@ C --> D[Initialize Heston/SABR]
 D --> E[Fast Monte Carlo Pricing]
 
 
-🧾 Blog Structure
-
-- [`/posts`](/posts) → Markdown-based blog entries and tutorials
-- [`/notebooks`](/notebooks) → Code notebooks illustrating each concept
-- [`/figures`](/figures) → Visual summaries and plots
-- [`/data`](/data) → (Optional) Sample datasets or references to public data
-
----
-
-## 🚀 Get Involved
-
-Feel free to fork, star or contribute ideas! Whether you're a quant, a data scientist, or a curious student — insights and suggestions are welcome.
