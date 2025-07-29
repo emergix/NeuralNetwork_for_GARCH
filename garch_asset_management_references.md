@@ -1,77 +1,125 @@
-# Literature Review: GARCH Models in Asset Management
+# 📚 Unified Literature Review: GARCH Models in Asset Management
 
-## 🧠 Introduction
-
-GARCH models have long been instrumental in volatility modeling and have found a range of applications in asset management. Recent studies show their effectiveness when extended to multivariate forms, hybridized with other models, or estimated via Bayesian methods. This review summarizes five key academic contributions that demonstrate the value of GARCH models in tactical and strategic portfolio allocation.
+This document presents a curated and standardized review of key academic contributions related to the use of GARCH and hybrid GARCH models in asset management. These works span traditional econometric methods, Bayesian approaches, and cutting-edge neural network-enhanced models.
 
 ---
 
-## 📘 1. Comparative Study of Multivariate GARCH Models for Portfolio Optimization
+## 🟥 1. Comparative Study of Multivariate GARCH Models for Portfolio Optimization
 
 **Reference**: [ScienceDirect, 2018](https://www.sciencedirect.com/science/article/pii/S106294081830038X)
 
-This paper evaluates several multivariate GARCH models—including DCC-GARCH—for portfolio optimization using empirical data. It compares these models based on risk-adjusted performance metrics such as:
+This study evaluates several multivariate GARCH models—including DCC-GARCH—for portfolio optimization using empirical financial data. The models are compared based on:
 - Sharpe ratio,
-- VaR,
-- realized volatility.
+- Value-at-Risk (VaR),
+- Realized volatility.
 
-**Conclusion**: Dynamic models such as DCC-GARCH significantly improve portfolio performance relative to static approaches.
+**Conclusion**: Dynamic models like DCC-GARCH consistently outperform static covariance methods in risk-adjusted performance.
 
-📄 Details in  : [engle_2002_dcc_garch.md](./engle_2002_dcc_garch.md)
-  
----
-
-
-## 📗 2. Flavin & Wickens (2000) – Tactical Asset Allocation Using Multivariate GARCH
-
-**Citation**: Flavin, T. J., & Wickens, M. R. (2000). _A multivariate GARCH model for predicting portfolio risk_. Journal of Empirical Finance.
-
-This study introduces a tactical asset allocation strategy using multivariate GARCH forecasts of time-varying covariance matrices. Their method shows:
-- Reduced realized risk (5% lower) compared to constant covariance strategies,
-- More efficient portfolio rebalancing under changing market regimes.
+📄 Details in: [`engle_2002_dcc_garch.md`](./engle_2002_dcc_garch.md)
 
 ---
 
-## 📙 3. Kinoshita (2015) – GARCH Filtering with Higher Moments for Allocation
+## 🟥 2. Flavin & Wickens (2000) – Tactical Asset Allocation Using Multivariate GARCH
 
+**Citation**: Flavin, T. J., & Wickens, M. R. (2000). _A multivariate GARCH model for predicting portfolio risk_. *Journal of Empirical Finance*.
+
+Introduces a tactical allocation strategy based on GARCH-forecasted time-varying covariance matrices. Results show:
+- ~5% reduction in realized portfolio risk,
+- Improved rebalancing efficiency during regime shifts.
+
+---
+
+## 🟥
 **Reference**: [SpringerLink](https://link.springer.com/article/10.1007/s00181-014-0871-1)
 
-This paper incorporates higher-order moments (skewness and kurtosis) into the volatility estimation process using GARCH filters. Results show:
-- Better capture of asymmetry in asset returns,
-- Outperformance versus classic mean-variance strategies.
+This paper extends GARCH filtering to include higher-order moments (skewness, kurtosis). Key findings:
+- Enhanced capture of asymmetric return behavior,
+- Better performance than classical mean-variance frameworks.
 
 ---
 
-## 📕 4. Bayesian Copula-GARCH for Asset Allocation
+## 🟥 4. Bayesian Copula-GARCH for Asset Allocation
 
-**Summary**: This study proposes a **Bayesian Copula-GARCH** framework for portfolio selection, using Metropolis-within-Gibbs sampling. The approach handles:
-- Parameter uncertainty explicitly,
-- Tail dependence between assets.
+**Summary**: Proposes a Bayesian Copula-GARCH model with Metropolis-within-Gibbs sampling to model dependence and parameter uncertainty. The framework allows:
+- Joint estimation of tail risk and marginal volatilities,
+- Robust performance under risk-averse scenarios.
 
-**Outcome**: Portfolios exhibit lower realized volatility and reduced exposure to high-risk assets under high risk aversion levels.
+**Outcome**: Reduced portfolio volatility and improved resilience to tail events.
 
 ---
 
-## 📒 5. Orthogonal Non-Elliptical GARCH for Robust Portfolio Selection
+## 🟥 5. Orthogonal Non-Elliptical GARCH for Robust Portfolio Selection
 
 **Reference**: [ScienceDirect, 2021](https://www.sciencedirect.com/science/article/pii/S0378426621000042)
 
-This paper introduces an orthogonal GARCH model that does not rely on elliptical distribution assumptions. It is used to:
-- Forecast multivariate volatility robustly,
-- Optimize portfolios while avoiding excessive rebalancing.
+Introduces an orthogonal GARCH model relaxing elliptical distribution assumptions. It is designed to:
+- Capture non-Gaussian features of returns,
+- Minimize rebalancing while preserving diversification.
 
-**Strength**: Captures non-Gaussian behavior in returns for better risk-adjusted allocation.
+---
 
+## 🟥 6. Xu et al. (2024) – GINN: GARCH-Informed Neural Network
+
+**Reference**: [arXiv](https://arxiv.org/html/2402.06642v1)
+
+Presents GINN, a model that combines GARCH volatility dynamics with LSTM-based deep learning. Demonstrates:
+- Superior R², MSE, and MAE in volatility prediction,
+- Strong performance in turbulent regimes.
+
+---
+
+## 🟥 7. GARCHNet – LSTM-GARCH for VaR Forecasting
+
+**Reference**: [Academia.edu](https://www.academia.edu/119434615/GARCHNet_Value_at_Risk_Forecasting_with_GARCH_Models_Based_on_Neural_Networks)
+
+Builds a hybrid model that merges LSTM with classic GARCH for improved Value-at-Risk forecasting. Results:
+- Better VaR backtesting accuracy,
+- Tested across multiple equity indices.
+
+---
+
+## 🟥 8. Zhao et al. (2024) – From GARCH to Neural Networks
+
+**Reference**: [arXiv](https://arxiv.org/html/2402.06642v1)
+
+Explores theoretical and empirical links between GARCH dynamics and deep learning. Proposes:
+- A GARCH-LSTM framework,
+- Demonstrated improvements in regime detection and forecast stability.
+
+---
+
+## 🟥 9. NeuralGARCH – Yin & Barucca (2022)
+
+**Reference**: [arXiv](https://arxiv.org/abs/2202.11285)
+
+Builds RNN-based volatility models with variational Bayesian inference. Benefits:
+- Adaptive modeling of time-varying volatility parameters,
+- Robustness to heavy-tailed innovations via Student-t distribution.
+
+---
+
+## 🟥 10. Michańków et al. (2023) – GRU-GARCH Hybrid
+
+**Reference**: [arXiv](https://arxiv.org/abs/2310.01063)
+
+Combines Gated Recurrent Units (GRUs) with multiple GARCH structures (APARCH, EGARCH). Findings:
+- Significant enhancement in VaR and Expected Shortfall metrics,
+- Outperformance in equity, commodity, and crypto markets.
 
 ---
 
 ## 📌 Summary Table
 
-| Reference | Model | Key Contribution |
-|----------|-------|------------------|
-| Comparative Study (2018) | DCC-GARCH & others | Outperformance in Sharpe & VaR |
-| Flavin & Wickens (2000) | Multivariate GARCH | Tactical allocation with risk reduction |
-| Kinoshita (2015) | GARCH + higher moments | Allocation under asymmetry & excess kurtosis |
-| Bayesian Copula-GARCH | Copula + GARCH (Bayesian) | Uncertainty-aware robust allocation |
-| Orthogonal GARCH (2021) | Non-elliptical GARCH | Robust covariance modeling |
+| # | Reference | Model | Key Contribution |
+|--:|-----------|--------|------------------|
+| 1 | ScienceDirect (2018) | DCC-GARCH & others | Sharpe/Volatility-based portfolio outperformance |
+| 2 | Flavin & Wickens (2000) | Multivariate GARCH | Tactical allocation and lower realized risk |
+| 3 | Kinoshita (2015) | GARCH + higher moments | Allocation with skewness and kurtosis |
+| 4 | Bayesian Copula-GARCH | Copula + GARCH | Tail-dependence modeling, Bayesian robustness |
+| 5 | Orthogonal GARCH (2021) | Non-elliptical GARCH | Non-Gaussian volatility modeling |
+| 6 | Xu et al. (2024) | GINN (GARCH + LSTM) | Superior volatility forecasting with LSTM |
+| 7 | GARCHNet | LSTM + GARCH | VaR forecasting and risk metric improvements |
+| 8 | Zhao et al. (2024) | GARCH-LSTM | Neural approximation of GARCH processes |
+| 9 | Yin & Barucca (2022) | NeuralGARCH | Bayesian RNNs with time-varying dynamics |
+|10 | Michańków et al. (2023) | GRU-GARCH | Enhanced VaR/ES in diverse markets |
 
