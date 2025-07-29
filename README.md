@@ -12,6 +12,7 @@ We aim to:
 - Show practical financial use cases in **asset management** and **exotic options trading**
 
 First we presentes a few references on the different type of GARCH models that are used in finance:
+
 📄 Details in  : [garch_asset_management.md](./garch_asset_management_en.md)
 ---
 
