@@ -123,7 +123,7 @@ The next sections will explore how hybrid models that combine GARCH-based volati
 
 ### Neural Network Solution
 ```mermaid
-graph LR
+graph TD
 A[Raw Price Data] --> B[NN Calibration]
 B --> C[GARCH Parameters]
 C --> D[Initialize Heston/SABR]
