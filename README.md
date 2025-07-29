@@ -78,13 +78,15 @@ D --> E[Fast Monte Carlo Pricing]
 ###  GARCH models integrated with Neural Network
 Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
 
-📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
+📄 Details in  : [garch_pytorch.md](./garch_pytorch.md)
 
 
 ## 🛠️ Technical Stack
 
 This blog will share:
 - Python notebooks using `PyTorch` or `TensorFlow`
+[garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
+  
 - Exploratory backtests and volatility forecasts
 - Visual insights via `matplotlib` or `plotly`
 - Integration examples for quant desks
