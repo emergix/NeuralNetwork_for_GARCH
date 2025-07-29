@@ -19,9 +19,7 @@ This model addresses limitations of earlier multivariate GARCH models by ensurin
 
 For a vector series of returns \( r_t \) with conditional variance matrix \( H_t \), the BEKK(1,1) model is:
 
-\[
-H_t = C'C + A' arepsilon_{t-1} arepsilon_{t-1}' A + B' H_{t-1} B
-\]
+![BEKK-GARCH Equation](./assets/images/bekk_equation.jpg)
 
 where:
 - \( C \) is a triangular matrix (for identification),
