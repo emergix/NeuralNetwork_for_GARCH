@@ -73,6 +73,11 @@ B --> C[GARCH Parameters]
 C --> D[Initialize Heston/SABR]
 D --> E[Fast Monte Carlo Pricing]
 
+###  GARCH models integrated with Neural Network
+Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
+
+  📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
+
 ```
 ## 🛠️ Technical Stack
 
