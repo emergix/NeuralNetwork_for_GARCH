@@ -29,7 +29,7 @@ Neural networks offer a transformative solution: **fast, robust, and scalable GA
 
 ---
 
-## 1. Asset Management Application: Optimizing Portfolios Under Dynamic Volatility Constraints
+## 1. Asset Management Application: Optimizing Portfolios 
 
 ### The Challenge
 Portfolio managers need real-time volatility forecasts to:
