@@ -13,7 +13,8 @@ We aim to:
 
 First we presentes a few references on the different type of GARCH models that are used in finance:
 
-📄 Details in  : [garch_asset_management.md](./garch_asset_management_en.md)
+📄 Details in  : [garch_asset_management_en.md](./garch_asset_management_en.md)
+
 ---
 
 # GARCH Revolution: How Deep Learning Optimizes Portfolio Management and Exotic Options Pricing
