@@ -50,7 +50,7 @@ This paper extends GARCH filtering to include higher-order moments (skewness, ku
 
 ---
 
-## 🟥 5. Orthogonal Non-Elliptical GARCH for Robust Portfolio Selection
+## 🟥 5. Marc S. Paolella, Pawel Polak, Patrick S. Walker (2021). Orthogonal Non-Elliptical GARCH for Robust Portfolio Selection
 
 **Reference**: [ScienceDirect, 2021](https://www.sciencedirect.com/science/article/pii/S0378426621000042)
 
