@@ -1,6 +1,5 @@
-# Application of GARCH Models in Asset Management
 
-## 📈 1. Classic Applications of GARCH Models in Asset Management
+## 📈 1. Asset Volatility Modelling with GARCH Models in Asset Management
 
 ### a. **Modeling Asset Volatility**
 GARCH models are particularly suitable for modeling the conditional volatility of financial returns. They allow:
