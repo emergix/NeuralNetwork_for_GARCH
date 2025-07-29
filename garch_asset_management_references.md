@@ -17,11 +17,7 @@ This paper evaluates several multivariate GARCH models—including DCC-GARCH—f
 
 **Conclusion**: Dynamic models such as DCC-GARCH significantly improve portfolio performance relative to static approaches.
 
----
-
-## 📘 1.Engle (2002)** – introduced the **DCC-GARCH** model, widely used for asset allocation.
-
-  📄 Details in  : [engle_2002_dcc_garch.md](./engle_2002_dcc_garch.md)
+📄 Details in  : [engle_2002_dcc_garch.md](./engle_2002_dcc_garch.md)
   
 ---
 
