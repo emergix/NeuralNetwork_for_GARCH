@@ -33,6 +33,10 @@ Key research contributions include:
     📄 Details in  : [engle_2002_dcc_garch.md](./engle_2002_dcc_garch.md)
   
 - **Bauwens et al. (2006)** – a comprehensive review of multivariate GARCH models.
+
+📄 Details in  : [bauwens_2006_multivariate_garch.md](./bauwens_2006_multivariate_garch.md)
+
+
 - Recent studies explore **GARCH models integrated with neural networks** (hybrid models) or **Bayesian hierarchical frameworks**.
 
 ## 🤖 4. Modern Extensions
