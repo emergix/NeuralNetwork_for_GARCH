@@ -29,6 +29,9 @@ Key research contributions include:
   📄 Details in  : [engle_kroner_1995_en.md](./engle_kroner_1995_en.md)
   
 - **Engle (2002)** – introduced the **DCC-GARCH** model, widely used for asset allocation.
+
+    📄 Details in  : [engle_2002_dcc_garch.md](./engle_2002_dcc_garch.md)
+  
 - **Bauwens et al. (2006)** – a comprehensive review of multivariate GARCH models.
 - Recent studies explore **GARCH models integrated with neural networks** (hybrid models) or **Bayesian hierarchical frameworks**.
 
