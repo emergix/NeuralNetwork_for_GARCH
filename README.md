@@ -130,9 +130,8 @@ B --> C[GARCH Parameters]
 C --> D[Initialize Heston/SABR/SLV]
 D --> E[Fast Monte Carlo Pricing]
 
-SLV : Stochastic Local Volatility
-
 ```
+SLV : Stochastic Local Volatility
 
 ###  GARCH models integrated with Neural Network
 Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
