@@ -4,7 +4,7 @@ This document presents a curated and standardized review of key academic contrib
 
 ---
 
-## 🟥 1. (2018) - Comparative Study of Multivariate GARCH Models for Portfolio Optimization
+## 🟥 1. Nor Syahilla Abdul Aziz, Spyridon Vrontos, Haslifah M. Hasim. (2018) - Comparative Study of Multivariate GARCH Models for Portfolio Optimization
 
 **Reference**: [ScienceDirect, 2018](https://www.sciencedirect.com/science/article/pii/S106294081830038X)
 
