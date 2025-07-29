@@ -120,7 +120,7 @@ Combines Gated Recurrent Units (GRUs) with multiple GARCH structures (APARCH, EG
 | 4 | Bayesian Copula-GARCH | Copula + GARCH | Tail-dependence modeling, Bayesian robustness |
 | 5 | Orthogonal GARCH (2021) | Non-elliptical GARCH | Non-Gaussian volatility modeling |
 | 6 | Xu et al. (2024) | GINN (GARCH + LSTM) | Superior volatility forecasting with LSTM |
-| 7 | GARCHNet | LSTM + GARCH | VaR forecasting and risk metric improvements |
+| 7 | GARCHNet (2024) | LSTM + GARCH | VaR forecasting and risk metric improvements |
 | 8 | Zhao et al. (2024) | GARCH-LSTM | Neural approximation of GARCH processes |
 | 9 | Yin & Barucca (2022) | NeuralGARCH | Bayesian RNNs with time-varying dynamics |
 |10 | Michańków et al. (2023) | GRU-GARCH | Enhanced VaR/ES in diverse markets |
