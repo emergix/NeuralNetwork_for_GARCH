@@ -1,4 +1,4 @@
-# 🧠 NeuralNetwork_for_GARCH
+### 🧠 NeuralNetwork_for_GARCH
 
 **Understanding GARCH Calibration with Neural Networks in Finance**
 
