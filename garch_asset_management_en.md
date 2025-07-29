@@ -42,7 +42,12 @@ Key research contributions include:
   📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
 
 
-- or **Bayesian hierarchical frameworks**.
+ or
+
+- **Bayesian hierarchical frameworks**.
+
+  📄 Details in  : [bayesian_hierarchical_volatility_models.md](./bayesian_hierarchical_volatility_models.md)
+
 
 ## 🤖 4. Modern Extensions
 
