@@ -4,9 +4,9 @@
 
 The GARCH(1,1) model is commonly used for modeling volatility in financial time series:
 
-\[
-\sigma_t^2 = \omega + \alpha \cdot \epsilon_{t-1}^2 + \beta \cdot \sigma_{t-1}^2
-\]
+![GARCH Equation](./assets/images/garch_equation_1.jpg)
+
+
 
 This document explains how to implement and calibrate this model using **PyTorch**, leveraging its automatic differentiation and optimization tools.
 
@@ -16,9 +16,8 @@ This document explains how to implement and calibrate this model using **PyTorch
 
 Under Gaussian errors, the negative log-likelihood for returns \( r_t \) is:
 
-\[
-\mathcal{L}(\theta) = -\frac{1}{2} \sum_{t} \left[ \log(2\pi) + \log(\sigma_t^2) + \frac{r_t^2}{\sigma_t^2} \right]
-\]
+![Log-Likelihood Equation](./assets/images/garch_equation_2.jpg)
+
 
 This function is minimized using gradient descent.
 
