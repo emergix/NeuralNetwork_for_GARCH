@@ -131,7 +131,29 @@ C --> D[Initialize Heston/SABR/SLV]
 D --> E[Fast Monte Carlo Pricing]
 
 ```
-SLV : Stochastic Local Volatility
+SLV : 🧮 Stochastic Local Volatility (SLV) models combine the strengths of two foundational approaches in volatility modeling: local volatility and stochastic volatility. While local volatility models (like Dupire’s model) are calibrated to exactly match the observed market implied volatility surface, they often fail to capture the true dynamics of volatility over time. Conversely, stochastic volatility models (such as Heston) offer realistic dynamics and mean reversion but cannot perfectly fit the observed implied volatilities.
+
+SLV bridges this gap by embedding a local volatility surface within a stochastic volatility framework, typically by multiplying the stochastic volatility term by a local volatility correction factor. The result is a flexible model that preserves exact calibration to market prices of vanilla options while maintaining realistic stochastic behavior of volatility paths. SLV is particularly valuable in pricing exotic options—like barrier or cliquet products—where path-dependence and volatility dynamics both play critical roles.
+
+
+Fast Monte Carlo Princing : 🧮 Fast Monte Carlo Pricing
+
+In the pricing of modern structured products and exotic derivatives, both the underlying models and the contract features are often so complex that traditional numerical methods—such as finite difference schemes, PDE solvers, or analytical approximations—break down or become unreliable. Models incorporating stochastic volatility, jump processes, or path-dependent barriers are rarely tractable with closed-form solutions. Furthermore, features like American-style exercise, callability, and soft barriers introduce discontinuities and early-exercise complexity that standard techniques can't handle efficiently.
+
+As a result, practitioners increasingly rely on Monte Carlo (MC) simulation as the only viable solution framework. However, naïve Monte Carlo implementations are notoriously slow, especially when used within nested simulations, calibration loops, or greeks computation. For these cases, advanced implementations—collectively referred to as Fast Monte Carlo methods—are necessary. These include techniques such as:
+
+    Longstaff-Schwartz regression for early exercise,
+
+    Control variates and antithetic sampling,
+
+    Quasi-random number generation (e.g., Sobol sequences),
+
+    GPU-accelerated simulation engines,
+
+    Neural surrogates for pricing or exercise decision modeling.
+
+These fast MC techniques are not just mathematical improvements—they are practical enablers of real-time decision-making in the pricing and risk management of exotic instruments.
+
 
 ###  GARCH models integrated with Neural Network
 Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
