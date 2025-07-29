@@ -25,6 +25,7 @@ Volatility and correlation forecasts from multivariate GARCH models (e.g., **DCC
 Key research contributions include:
 
 - **Engle & Kroner (1995)** – on BEKK-GARCH models for multivariate volatility modeling.
+- 
   📄 Details in  : [engle_kroner_1995_en.md](./engle_kroner_1995_en.md)
   
 - **Engle (2002)** – introduced the **DCC-GARCH** model, widely used for asset allocation.
