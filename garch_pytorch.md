@@ -64,6 +64,49 @@ def negative_log_likelihood(model, returns):
     return loglik.sum()
 ```
 
+## 🐍 Example of use of the  Code
+
+```python
+
+import torch
+from garch_model import GARCH11, negative_log_likelihood
+import matplotlib.pyplot as plt
+
+# Generate synthetic returns (e.g., normal noise with volatility clustering)
+torch.manual_seed(0)
+T = 500
+returns = torch.randn(T) * 0.02
+
+# Initialize and train the model
+model = GARCH11()
+optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+
+n_epochs = 1000
+for epoch in range(n_epochs):
+    optimizer.zero_grad()
+    loss = negative_log_likelihood(model, returns)
+    loss.backward()
+    optimizer.step()
+
+    if epoch % 100 == 0:
+        print(f"Epoch {epoch}, Loss: {loss.item():.4f}")
+
+# Get fitted conditional variances
+sigma2 = model(returns).detach().numpy()
+
+# Plot results
+plt.figure(figsize=(10, 5))
+plt.plot(returns.numpy(), label="Returns", alpha=0.6)
+plt.plot(sigma2**0.5, label="Estimated Volatility (σ)", color="orange")
+plt.title("GARCH(1,1) Model Fit on Simulated Returns")
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+
+```
+
+
 ## 📎 Features You Can Add
 
 - Student-t innovations (heavy tails),
