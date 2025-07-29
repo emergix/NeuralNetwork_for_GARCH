@@ -40,7 +40,7 @@ Neural networks offer a transformative solution: **fast, robust, and scalable GA
 
 ## 1. Asset Management Application: Optimizing Portfolios 
 
-### The Challenge
+# The Challenge
 Portfolio managers need real-time volatility forecasts to:
 - Provide real-time volatility estimates for portfolio risk assessment
 - Improve Value-at-Risk (VaR) and Conditional VaR (CVaR) calculations
@@ -49,18 +49,18 @@ Portfolio managers need real-time volatility forecasts to:
 - Optimize allocations using Markowitz/Black-Litterman models
 - React to sudden market regime shifts
 
-### Neural Network Advantages
+# Neural Network Advantages
 | Feature | Benefit |
 |---------|---------|
 | **Real-time calibration** | <1-second parameter updates on streaming data |
 | **Outlier resistance** | Stable estimates during market crises |
 | **Path generation** | Simulate future volatility scenarios for stress testing |
 
-### Practical Use Case
+# Practical Use Case
 > A pension fund implemented NN-calibrated GARCH for daily portfolio rebalancing, reducing annualized volatility by 15% while maintaining target returns.
 >
 
-References for the uses of GARCH Calibration in asset management
+## References for the uses of GARCH Calibration in asset management
 
 📄 Details in  : [garch_asset_management_references.md](./garch_asset_management_references.md)
 
