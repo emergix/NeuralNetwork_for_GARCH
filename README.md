@@ -84,11 +84,41 @@ Here is a list a cases where the use of a calibrated garch brings added value to
 
 ## 2. Exotic Options Trading: From GARCH to Stochastic Volatility
 
-### The Challenge
-Exotic options pricing requires precise volatility modeling where:
-- Barrier/Asian options are hypersensitive to volatility dynamics
-- Stochastic models (Heston/SABR) need accurate initial parameters
-- Traditional calibration creates trading desk bottlenecks
+
+## 🎯 Introduction
+
+Volatility modeling stands at the heart of modern derivatives pricing—especially in the realm of **exotic options**, where nonlinear payoffs and path dependencies make standard assumptions inadequate. Unlike plain-vanilla instruments, exotic options such as **barrier**, **Asian**, or **lookback** options are **acutely sensitive** to the dynamics of volatility over time—not just its average level.
+
+While models like **Black-Scholes** assume constant volatility, real markets are anything but static. Empirical evidence shows volatility clustering, regime switching, and heavy tails—phenomena that **GARCH-type models** capture with greater realism. However, when transitioning to **stochastic volatility models** (like **Heston**, **SABR**, or rough volatility frameworks), new challenges emerge: calibration becomes more complex, and real-time implementation often strains computing resources.
+
+## ⚠️ The Challenge
+
+In a trading environment, poor volatility modeling introduces **severe risks** and **economic inefficiencies**:
+
+- **Mispriced Risk**: Incorrect volatility forecasts lead to **under- or over-pricing** of options, especially for products sensitive to the volatility *path*.
+- **Delta Hedging Errors**: Models that miss volatility clustering or sudden spikes lead to frequent **hedging slippage**, increasing P&L volatility.
+- **Calibration Bottlenecks**: 
+  - Exotic desks often need to recalibrate models **daily or intraday** to reflect new market conditions.
+  - Traditional calibration via **maximum likelihood estimation (MLE)** or grid search can be **slow and unstable**, especially for non-Gaussian or non-elliptical distributions.
+- **Initial Parameter Sensitivity**:
+  - Models like **Heston** or **SABR** require well-initialized volatility curves and correlation terms.
+  - GARCH models, while robust, are often **slow to converge** and hard to fit in high dimensions.
+
+## 🔁 From GARCH to Stochastic Volatility
+
+GARCH models provide a **data-driven, econometric backbone** for understanding realized volatility and autocorrelation structures. In practice, they are often used to:
+
+- Provide **initial guesses** for volatility term structures,
+- Inform **regime-dependent priors** in Bayesian calibration schemes,
+- Accelerate **machine learning-based calibration**, where GARCH fits are used as conditioning inputs.
+
+This bridge—from **GARCH-style econometrics** to **stochastic differential equation (SDE)–based models**—can dramatically improve both **pricing fidelity** and **computational speed**, if well implemented.
+
+---
+
+## ✅ What's Next
+
+The next sections will explore how hybrid models, GPU acceleration, and neural volatility surrogates are being deployed to bring **real-time stochastic volatility calibration** closer to trading floor practicality.
 
 ### Neural Network Solution
 ```mermaid
