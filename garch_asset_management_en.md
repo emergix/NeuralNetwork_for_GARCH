@@ -37,7 +37,12 @@ Key research contributions include:
   📄 Details in  : [bauwens_2006_multivariate_garch.md](./bauwens_2006_multivariate_garch.md)
 
 
-- Recent studies explore **GARCH models integrated with neural networks** (hybrid models) or **Bayesian hierarchical frameworks**.
+- Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
+
+  📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
+
+
+- or **Bayesian hierarchical frameworks**.
 
 ## 🤖 4. Modern Extensions
 
