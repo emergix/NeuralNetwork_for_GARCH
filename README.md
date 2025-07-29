@@ -76,6 +76,8 @@ This use case demonstrates how hybridizing deep learning with econometric struct
 
 ## References for the uses of GARCH Calibration in asset management
 
+Here is a list a cases where the use of a calibrated garch brings added value to asset management tasks.
+
 📄 Details in  : [garch_asset_management_references.md](./garch_asset_management_references.md)
 
 ---
