@@ -4,7 +4,7 @@ This document presents a curated and standardized review of key academic contrib
 
 ---
 
-## 🟥 1. Comparative Study of Multivariate GARCH Models for Portfolio Optimization
+## 🟥 1. (2018) - Comparative Study of Multivariate GARCH Models for Portfolio Optimization
 
 **Reference**: [ScienceDirect, 2018](https://www.sciencedirect.com/science/article/pii/S106294081830038X)
 
@@ -29,7 +29,7 @@ Introduces a tactical allocation strategy based on GARCH-forecasted time-varying
 
 ---
 
-## 🟥 3.Ryo Kinoshita (2014) Asset allocation under higher moments with the GARCH filter
+## 🟥 3.Ryo Kinoshita. (2014) - Asset allocation under higher moments with the GARCH filter
 **Reference**: [SpringerLink](https://link.springer.com/article/10.1007/s00181-014-0871-1)
 
 This paper extends GARCH filtering to include higher-order moments (skewness, kurtosis). Key findings:
@@ -38,7 +38,7 @@ This paper extends GARCH filtering to include higher-order moments (skewness, ku
 
 ---
 
-## 🟥 4. Long Kang (2009). Asset Allocation in a Bayesian Copula-Garch Framework: An Application to the 'Passive Funds versus Active Funds' Problem
+## 🟥 4. Long Kang (2009). - Asset Allocation in a Bayesian Copula-Garch Framework: An Application to the 'Passive Funds versus Active Funds' Problem
 
 **Reference**: [ssrn](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1355727)]
 
@@ -50,7 +50,7 @@ This paper extends GARCH filtering to include higher-order moments (skewness, ku
 
 ---
 
-## 🟥 5. Marc S. Paolella, Pawel Polak, Patrick S. Walker (2021). Orthogonal Non-Elliptical GARCH for Robust Portfolio Selection
+## 🟥 5. Marc S. Paolella, Pawel Polak, Patrick S. Walker. (2021) - Orthogonal Non-Elliptical GARCH for Robust Portfolio Selection
 
 **Reference**: [ScienceDirect, 2021](https://www.sciencedirect.com/science/article/pii/S0378426621000042)
 
@@ -90,7 +90,7 @@ Explores theoretical and empirical links between GARCH dynamics and deep learnin
 
 ---
 
-## 🟥 9. NeuralGARCH – Yin & Barucca (2022)
+## 🟥 9. Yin & Barucca (2022) - NeuralGARCH  
 
 **Reference**: [arXiv](https://arxiv.org/abs/2202.11285)
 
