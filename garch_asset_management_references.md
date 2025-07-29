@@ -70,7 +70,7 @@ Presents GINN, a model that combines GARCH volatility dynamics with LSTM-based d
 
 ---
 
-## 🟥 7. GARCHNet – LSTM-GARCH for VaR Forecasting
+## 🟥 7. Marcin Chlebus. (2024) - GARCHNet – LSTM-GARCH for VaR Forecasting
 
 **Reference**: [Academia.edu](https://www.academia.edu/119434615/GARCHNet_Value_at_Risk_Forecasting_with_GARCH_Models_Based_on_Neural_Networks)
 
