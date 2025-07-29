@@ -38,7 +38,9 @@ This paper extends GARCH filtering to include higher-order moments (skewness, ku
 
 ---
 
-## 🟥 4. Bayesian Copula-GARCH for Asset Allocation
+## 🟥 4. Long Kang (2009). Asset Allocation in a Bayesian Copula-Garch Framework: An Application to the 'Passive Funds versus Active Funds' Problem
+
+**Reference**: [ssrn](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1355727)]
 
 **Summary**: Proposes a Bayesian Copula-GARCH model with Metropolis-within-Gibbs sampling to model dependence and parameter uncertainty. The framework allows:
 - Joint estimation of tail risk and marginal volatilities,
