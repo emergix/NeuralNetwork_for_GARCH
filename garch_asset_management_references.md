@@ -19,6 +19,13 @@ This paper evaluates several multivariate GARCH models—including DCC-GARCH—f
 
 ---
 
+## 📘 1.Engle (2002)** – introduced the **DCC-GARCH** model, widely used for asset allocation.
+
+  📄 Details in  : [engle_2002_dcc_garch.md](./engle_2002_dcc_garch.md)
+  
+---
+
+
 ## 📗 2. Flavin & Wickens (2000) – Tactical Asset Allocation Using Multivariate GARCH
 
 **Citation**: Flavin, T. J., & Wickens, M. R. (2000). _A multivariate GARCH model for predicting portfolio risk_. Journal of Empirical Finance.
