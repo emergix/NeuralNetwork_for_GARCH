@@ -59,6 +59,11 @@ This paper introduces an orthogonal GARCH model that does not rely on elliptical
 
 **Strength**: Captures non-Gaussian behavior in returns for better risk-adjusted allocation.
 
+
+- Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
+
+  📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
+
 ---
 
 ## 📌 Summary Table
