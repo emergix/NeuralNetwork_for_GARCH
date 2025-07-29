@@ -1,4 +1,4 @@
-## 🧠 NeuralNetwork_for_GARCH
+# 🧠 NeuralNetwork_for_GARCH
 
 **Understanding GARCH Calibration with Neural Networks in Finance**
 
@@ -17,7 +17,7 @@ First we presentes a few references on the different type of GARCH models that a
 
 ---
 
-# GARCH Revolution: How Deep Learning Optimizes Portfolio Management and Exotic Options Pricing
+## GARCH Revolution: How Deep Learning Optimizes Portfolio Management and Exotic Options Pricing
 
 ## Introduction
 Financial volatility modeling is fundamental to modern finance, yet traditional GARCH calibration methods (like MLE/QMLE) face significant challenges:
