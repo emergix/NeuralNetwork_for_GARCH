@@ -57,8 +57,22 @@ Portfolio managers need real-time volatility forecasts to:
 | **Path generation** | Simulate future volatility scenarios for stress testing |
 
 # Practical Use Case
-> A pension fund implemented NN-calibrated GARCH for daily portfolio rebalancing, reducing annualized volatility by 15% while maintaining target returns.
->
+A large pension fund managing a diversified portfolio of equities and fixed income sought to improve the stability of its daily portfolio rebalancing strategy. Traditionally, the fund relied on a standard GARCH(1,1) model calibrated using Quasi-Maximum Likelihood Estimation (QMLE) to estimate short-term volatility for each asset class. While effective in calm markets, this approach frequently broke down during periods of market turbulence or structural shifts—leading to erratic allocation changes and increased turnover.
+
+To address this, the fund adopted a neural network (NN)-calibrated GARCH model, where the volatility dynamics were retained from the GARCH structure, but the calibration (i.e., the estimation of parameters such as ω,α,βω,α,β) was learned using a data-driven, end-to-end deep learning approach. Leveraging PyTorch and GPU acceleration, the model was trained on decades of historical returns, incorporating not only price-based inputs but also macroeconomic indicators and market sentiment features.
+
+This NN-based calibration offered three immediate benefits:
+
+    Faster updates: Volatility forecasts could be updated daily in near real-time, enabling more responsive portfolio adjustments.
+
+    Improved robustness: The neural network learned to attenuate the influence of outliers and adapt to regime changes without requiring explicit structural modeling.
+
+    Smarter allocation: By better capturing volatility clustering and cross-asset dynamics, the fund could make smoother allocation shifts.
+
+Results: Over a one-year live deployment period, the strategy achieved a 15% reduction in annualized portfolio volatility compared to the legacy GARCH-QMLE pipeline, while maintaining target returns. Moreover, trading costs were reduced thanks to lower portfolio turnover, and risk-adjusted performance improved across both tranquil and stressed market conditions.
+
+This use case demonstrates how hybridizing deep learning with econometric structure can bring tangible performance gains in real-world financial settings—bridging the gap between theoretical volatility modeling and practical asset management needs.
+
 
 ## References for the uses of GARCH Calibration in asset management
 
