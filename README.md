@@ -19,11 +19,18 @@ First we presentes a few references on the different type of GARCH models that a
 
 ## GARCH Revolution: How Deep Learning accelerates GARCH Calibration and the consequences for financial applications
 
-## Introduction
-Financial volatility modeling is fundamental to modern finance, yet traditional GARCH calibration methods (like MLE/QMLE) face significant challenges:
-- Slow computation speeds
-- Sensitivity to outliers
-- Instability during market regime shifts
+# Introduction
+Financial volatility modeling is fundamental to modern finance, underpinning critical applications such as option pricing, portfolio optimization, Value-at-Risk estimation, and systemic risk monitoring. Among the most widely used models, the GARCH (Generalized Autoregressive Conditional Heteroskedasticity) family provides a powerful framework for capturing time-varying volatility in asset returns. However, traditional calibration techniques, such as Maximum Likelihood Estimation (MLE) or Quasi-MLE (QMLE), face notable limitations in practice.
+
+First, slow computation speeds hinder their scalability. MLE procedures typically require iterative numerical optimization of a non-convex likelihood surface, which becomes especially time-consuming for high-frequency data or multivariate GARCH extensions. This delay can be a bottleneck in real-time applications such as high-frequency trading or risk monitoring dashboards.
+
+Second, sensitivity to outliers poses a serious robustness issue. MLE assumes a specific distribution for residuals (often Gaussian or Student-t), making it vulnerable to extreme market moves or data recording anomalies. A few outliers can lead to large distortions in estimated parameters, which then propagate to poor volatility forecasts and suboptimal risk measures.
+
+Third, instability during market regime shifts undermines the reliability of GARCH models in volatile environments. Financial markets often transition between regimes—such as low-volatility bull markets and high-volatility crises. Classical GARCH calibration does not adapt dynamically to such structural breaks, leading to persistent forecasting errors, overfitting of past regimes, and unreliable confidence intervals.
+
+These challenges highlight the need for more adaptive, robust, and computationally efficient approaches—motivating the integration of machine learning, Bayesian methods, or deep learning frameworks into modern GARCH modeling. These alternatives promise not only faster calibration but also better generalization across regimes and resilience to data imperfections.
+
+# Why Deep Learning will help us
 
   Deep learning can accelerate the calibration of GARCH models by leveraging automatic differentiation, parallel computation, and modern optimization techniques. Unlike traditional methods that often rely on manual gradient derivation and iterative optimization with limited scalability, deep learning frameworks (like PyTorch or TensorFlow) allow for efficient computation of gradients and batch-wise processing of large datasets. This enables faster convergence during training and makes it feasible to estimate GARCH parameters jointly across multiple time series or in hybrid models (e.g., LSTM-GARCH). Additionally, neural networks can learn complex volatility dynamics that extend beyond the linear assumptions of classical GARCH, offering both speed and modeling flexibility.
 
