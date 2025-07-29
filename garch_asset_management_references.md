@@ -29,7 +29,7 @@ Introduces a tactical allocation strategy based on GARCH-forecasted time-varying
 
 ---
 
-## 🟥 3.Ryo Kinoshita (2004) Asset allocation under higher moments with the GARCH filter
+## 🟥 3.Ryo Kinoshita (2014) Asset allocation under higher moments with the GARCH filter
 **Reference**: [SpringerLink](https://link.springer.com/article/10.1007/s00181-014-0871-1)
 
 This paper extends GARCH filtering to include higher-order moments (skewness, kurtosis). Key findings:
