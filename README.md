@@ -120,6 +120,7 @@ This bridge—from **GARCH-style econometrics** to **stochastic differential equ
 
 The next sections will explore how hybrid models that combine GARCH-based volatility structures with neural architectures, along with GPU-accelerated training and deep volatility surrogates, are being deployed to bring real-time stochastic volatility calibration closer to trading floor practicality. In this emerging paradigm, GARCH models not only provide fast initial volatility estimates, but also serve as interpretable components or priors within more complex stochastic or machine learning-based pricing frameworks. This integration helps reduce calibration time, improve robustness across market regimes, and enhance the responsiveness of exotic options desks.
 
+Moreover, in certain markets—especially for exotic or illiquid underlyings—liquidity is so limited that traders often cannot rely on implied vol surfaces or liquid option chains for calibration. In such contexts, even a modest upgrade beyond the Black-Scholes model, such as GARCH-driven dynamics or neural volatility forecasting, provides valuable structure and realism to pricing and risk management.
 
 ### Neural Network Solution
 ```mermaid
