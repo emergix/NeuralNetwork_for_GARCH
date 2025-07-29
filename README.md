@@ -17,7 +17,7 @@ First we presentes a few references on the different type of GARCH models that a
 
 ---
 
-## GARCH Revolution: How Deep Learning Optimizes Portfolio Management and Exotic Options Pricing
+## GARCH Revolution: How Deep Learning accelerates GARCH Calibration and the consequences for financial applications
 
 ## Introduction
 Financial volatility modeling is fundamental to modern finance, yet traditional GARCH calibration methods (like MLE/QMLE) face significant challenges:
