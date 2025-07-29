@@ -46,7 +46,7 @@ Portfolio managers need real-time volatility forecasts to:
 ### Practical Use Case
 > A pension fund implemented NN-calibrated GARCH for daily portfolio rebalancing, reducing annualized volatility by 15% while maintaining target returns.
 
-📄 Voir le document sur GARCH : [garch_asset_management.md](./garch_asset_management.md)
+📄 Details in  : [garch_asset_management.md](./garch_asset_management_en.md)
 
 ---
 
