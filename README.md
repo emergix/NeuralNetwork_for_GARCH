@@ -127,8 +127,10 @@ Moreover, in certain markets—especially for exotic or illiquid underlyings—l
 graph TD
 A[Raw Price Data] --> B[NN Calibration]
 B --> C[GARCH Parameters]
-C --> D[Initialize Heston/SABR]
+C --> D[Initialize Heston/SABR/SLV]
 D --> E[Fast Monte Carlo Pricing]
+
+SLV : Stochastic Local Volatility
 
 ```
 
