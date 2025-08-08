@@ -16,6 +16,8 @@ These models typically use a GARCH process to model volatility and an artificial
 - **Xu et al. (2019)** – Proposed an ANN-GARCH model where a feedforward neural network captures the nonlinear structure in financial returns, improving out-of-sample volatility forecasts.
 - **Kim & Shin (2007)** – Combined a GARCH model with a multilayer perceptron to capture asymmetry and leverage effects.
 
+📄 Details in  : [Hybrid_GARCH_ANN.md](./Hybrid_GARCH_ANN.md)
+
 ### 2. **GARCH with Deep Learning Architectures**
 Recent studies have applied more complex architectures such as **LSTM (Long Short-Term Memory)** networks or **CNNs (Convolutional Neural Networks)**.
 
