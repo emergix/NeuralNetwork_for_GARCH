@@ -157,15 +157,18 @@ where $f$ is an MLP; classical GARCH is recovered by restricting $f$ to be linea
      - Short-dated options: 3-5% pricing improvement
      - Volatility derivatives: Better term structure capture
 
-#### 7. **Seamless Model Evolution Path**
-   ```mermaid
-   sequenceDiagram
-     Trading Desk->>GARCH-ANN: Daily calibration
-     GARCH-ANN->>Stochastic Model: Passes learned features
-     Stochastic Model->>Trading Desk: Weekly complex pricing
-     Note right: Hybrid model reduces stochastic calibration frequency by 70%
-   ```
-
+##### 7. **Seamless Model Evolution Path**
+```mermaid
+sequenceDiagram
+    participant Trading Desk
+    participant GARCH-ANN
+    participant Stochastic Model
+    
+    Trading Desk->>GARCH-ANN: Daily calibration
+    GARCH-ANN->>Stochastic Model: Passes learned features
+    Stochastic Model-->>Trading Desk: Weekly complex pricing
+    Note right of Stochastic Model: Hybrid model reduces stochastic<br>calibration frequency by 70%
+```
 
 #### 8. **Behavioral Insight Generation**
 
