@@ -45,37 +45,68 @@ Breaking Down the Model
 
 The GARCH part of the model is responsible for calculating a measure of volatility, which is the conditional variance σt2​. Conditional variance just means the expected variance at a specific time, given all the information we have up until that point.
 
-    The first equation, ϵt​=σt​zt​, shows that the prediction error at time t (ϵt​) is a random shock (zt​) multiplied by the current volatility (σt​). This is just a way of saying that on a volatile day, the error is likely to be larger.
+## Core GARCH Equations
 
-    The second equation, σt2​=ω+αϵt−12​+βσt−12​, is the core of the GARCH model. It's a recursive equation, meaning it feeds its own past results back into itself to make a new prediction. It says that today's volatility (σt2​) depends on three things:
+### Equation 1: Prediction Error Decomposition
+$$ε_t = σ_t \cdot z_t$$
 
-        A baseline level of volatility (ω).
+The first equation shows that the prediction error at time $t$ ($ε_t$) is a random shock ($z_t$) multiplied by the current volatility ($σ_t$). This captures the intuition that **on volatile days, prediction errors tend to be larger**.
 
-        Yesterday's squared error (ϵt−12​), which tells us about how big yesterday's market shock was.
+### Equation 2: GARCH(1,1) Volatility
+$$σ_t^2 = ω + α ε_{t-1}^2 + β σ_{t-1}^2$$
 
-        Yesterday's volatility (σt−12​), which tells us how volatile things were in general.
+The second equation is the core of the GARCH model. It's a **recursive equation** (feeding its own past results back into itself) that states today's volatility ($σ_t^2$) depends on three components:
+
+1. **Baseline volatility** ($ω$)  
+2. **Yesterday's squared error** ($ε_{t-1}^2$) → Measures magnitude of recent market shock  
+3. **Yesterday's volatility** ($σ_{t-1}^2$) → Captures persistent volatility trends  
+
+---
+
+## Artificial Neural Network Component
+
+### Purpose
+Use an **Artificial Neural Network (ANN)** to model complex nonlinear patterns that the GARCH model misses in its residuals.
+
+### Approach
+- Process the GARCH model's **standardized residuals**:  
+  $$x_t = \frac{ε_t}{σ_t}$$
+- Standardization makes the data more consistent and easier for the ANN to learn from  
+- These residuals represent the **"leftover errors"** after GARCH modeling  
+
+### Architecture
+1. **Input**: Window of past standardized residuals  
+   $$𝐱_t = [x_{t-1}, x_{t-2}, ..., x_{t-p}]$$  
+   (Giving the ANN a history of GARCH's prediction errors)
+   
+2. **Hidden Layer**:  
+   - Uses **ReLU activation** ($ϕ$) to learn complex patterns  
+   - Discovers nonlinear relationships in the error sequence  
+   
+3. **Output**:  
+   - Produces estimate $\hat{ε}_t^2$ (the nonlinear component missed by GARCH)  
+   - Uses **linear activation** ($ψ$) in output layer  
+
+---
+
+## Hybrid Integration Framework
+
+### Combined Volatility Forecast
+$$σ_{t,\text{hybrid}}^2 = σ_{t,\text{GARCH}}^2 + γ \hat{ε}_t^2$$
+
+This combines both components:  
+- **$σ_{t,\text{GARCH}}^2$**: Standard GARCH volatility prediction  
+- **$\hat{ε}_t^2$**: ANN's estimate of nonlinear residual patterns  
+- **$γ$**: Weight parameter controlling ANN's contribution  
+
+### Key Interpretation
+- $γ$ determines how much weight we give to the ANN's findings:  
+  - **Large $γ$**: ANN explains significant residual patterns  
+  - **Small $γ$**: GARCH dominates final forecast  
+- Creates a **synergistic model** that leverages both time-series structure (GARCH) and nonlinear pattern recognition (ANN)
 
 
 
-    Use an Artificial Neural Network (ANN) to find and model the more complex, hidden nonlinear patterns that the GARCH model misses.
-
-    The ANN's job is to find the nonlinear patterns in the GARCH model's leftover errors. Instead of just using the raw errors, the authors cleverly use standardized residuals as input for the ANN. A standardized residual is simply an error (ϵt​) divided by its predicted standard deviation (σt​), which helps to make the data more consistent and easier for the ANN to learn from.
-
-    The input to the ANN, xt​, is a series of past standardized residuals. This is like giving the ANN a history of how wrong the GARCH model has been.
-
-    The ANN then processes this information through a hidden layer using an activation function (ϕ). An activation function is a mathematical function that determines the output of a neuron, helping the network learn complex patterns. In this case, the ReLU (Rectified Linear Unit) function is used.
-
-    Finally, the ANN produces an output, ϵ^t2​, which is its estimate of the nonlinear part of the squared error that the GARCH model missed. A linear activation function (ψ) is used in the output layer.
-
-  The Hybrid Integration: Putting It All Together
-
-This is where the two components are combined to create the final, more accurate prediction.
-
-    The final hybrid volatility forecast, σt,hybrid2​, is calculated by taking the standard GARCH volatility and adding the ANN's special contribution.
-
-    The term γϵ^t2​ is the ANN's part of the prediction, where γ is a parameter that controls how much weight is given to the ANN's findings. If the ANN is really good, γ will be large. If the ANN doesn't find much, it will be small.
-
-    
 
 An Artificial Neural Network (ANN) is a type of machine learning model inspired by the human brain. It's excellent at finding intricate, nonlinear relationships within data without needing to be explicitly told what those relationships are.
 
