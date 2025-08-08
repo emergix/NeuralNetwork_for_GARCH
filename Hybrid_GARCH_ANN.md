@@ -178,32 +178,23 @@ sequenceDiagram
 
       - **Detects latent regime shifts before stochastic models flag them**:
 
-- **Implementation Roadmap for Trading Desks**:
 
-    - Phase 1: Deploy ANN-GARCH for
+  ### Implementation Roadmap for Trading Desks
 
-        Real-time risk monitoring
-
-        Short-term volatility forecasting
-
-        Vanilla options pricing
-
-    - Phase 2: Use hybrid outputs to
-
-        Initialize stochastic models
-
-        Reduce parameter search space
-
-        Set volatility mean-reversion anchors
-
-    - Phase 3: Employ stochastic models for
-
-        Exotic derivatives pricing
-
-        Portfolio stress testing
-
-        Long-dated volatility forecasting
-
+| Phase | Key Activities                          | Applications                              | Timeline   |
+|-------|-----------------------------------------|-------------------------------------------|------------|
+| 🚀 **1** | **Deploy ANN-GARCH**                    |                                           | Month 1-2  |
+|       | 📊 Real-time risk monitoring             | • Intraday VaR calculation                |            |
+|       | 🔮 Short-term volatility forecasting     | • Daily option hedging                    |            |
+|       | 💰 Vanilla options pricing               | • Equity options desk                     |            |
+| ⚙️ **2** | **Use hybrid outputs to**               |                                           | Month 3-4  |
+|       | ⚡ Initialize stochastic models          | • 70% faster model convergence            |            |
+|       | 🎯 Reduce parameter search space         | • Lower compute costs                     |            |
+|       | ⚓ Set volatility mean-reversion anchors | • Term structure modeling                 |            |
+| 🚀 **3** | **Employ stochastic models for**        |                                           | Month 5+   |
+|       | 🎲 Exotic derivatives pricing            | • Barrier options<br>• Volatility swaps   |            |
+|       | 🧪 Portfolio stress testing              | • Black swan scenarios                    |            |
+|       | 📈 Long-dated volatility forecasting     | • Strategic asset allocation              |            |
 
 ### Example: Workflow for a Trading Desk
 ```mermaid
