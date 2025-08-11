@@ -46,46 +46,47 @@
 
 ```mermaid
 flowchart LR
-    subgraph Data[Sources de données]
-      A1[Marchés temps réel\n(Ticks/1m/5m/Daily)]
-      A2[Vol implicite & surfaces\n(Options listées)]
-      A3[Facteurs/Macro/News]
-    end
+  subgraph Data[Sources de données]
+    A1[Marchés temps réel<br/>(Ticks / 1m / 5m / Daily)]
+    A2[Vol implicite & surfaces<br/>(Options listées)]
+    A3[Facteurs / Macro / News]
+  end
 
-    subgraph Prep[Pré-traitement & GARCH]
-      B1[Nettoyage/Alignement\n+ z-score par actif]
-      B2[GARCH/EGARCH/GJR par actif\nσ_t, résidus standardisés ε_t]
-      B3[Fenêtrage L×N\n(construction tenseurs)]
-    end
+  subgraph Prep[Pré-traitement & GARCH]
+    B1[Nettoyage / Alignement<br/>+ z-score par actif]
+    B2[GARCH / EGARCH / GJR par actif<br/>σ_t, résidus standardisés ε_t]
+    B3[Fenêtrage L × N<br/>(construction tenseurs)]
+  end
 
-    subgraph NN[Feature learning & Forecast]
-      C1[Bloc CNN (spatial)\nco-mouvements cross-section]
-      C2[Bloc LSTM (temporel)\nmémoire & régimes]
-      C3[Tête de sortie\nμ_vol(t+h), quantiles, incertitude]
-    end
+  subgraph NN[Feature learning & Forecast]
+    C1[Bloc CNN (spatial)<br/>co-mouvements cross-section]
+    C2[Bloc LSTM (temporel)<br/>mémoire & régimes]
+    C3[Tête de sortie<br/>μ_vol(t+h), quantiles, incertitude]
+  end
 
-    subgraph Orchestration[Orchestration & Monitoring]
-      D1[Backtest walk-forward\nPnL, Sharpe, turnover]
-      D2[Évaluation en continu\nDrift & recalibrage]
-      D3[Explainability\nFiltres CNN, importance temporelle]
-    end
+  subgraph Orchestration[Orchestration & Monitoring]
+    D1[Backtest walk-forward<br/>PnL, Sharpe, turnover]
+    D2[Évaluation en continu<br/>drift & recalibrage]
+    D3[Explainability<br/>Filtres CNN, importance temporelle]
+  end
 
-    subgraph Consumers[Consommateurs côté desk]
-      E1[Pricing surfaces\n(SABR/SVI/Bergomi)]
-      E2[Trading vol\n(variance/vol swaps, VIX, options)]
-      E3[Hedging Vega/Gamma]
-      E4[Risk (VaR/ES, Stress tests)]
-    end
+  subgraph Consumers[Consommateurs côté desk]
+    E1[Pricing surfaces<br/>(SABR / SVI / Bergomi)]
+    E2[Trading vol<br/>(variance / vol swaps, VIX, options)]
+    E3[Hedging Vega / Gamma]
+    E4[Risk<br/>(VaR / ES, stress tests)]
+  end
 
-    A1 --> B1
-    A2 --> B1
-    A3 --> B1
-    B1 --> B2 --> B3 --> C1 --> C2 --> C3
-    C3 --> D1
-    C3 --> D2
-    C3 --> D3
-    C3 --> E1
-    C3 --> E2
-    C3 --> E3
-    C3 --> E4
+  A1 --> B1
+  A2 --> B1
+  A3 --> B1
+  B1 --> B2 --> B3 --> C1 --> C2 --> C3
+  C3 --> D1
+  C3 --> D2
+  C3 --> D3
+  C3 --> E1
+  C3 --> E2
+  C3 --> E3
+  C3 --> E4
+
 ```
