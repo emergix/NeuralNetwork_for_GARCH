@@ -37,7 +37,8 @@ C_t &= f_t \odot C_{t-1} + i_t \odot \tilde{C}_t & \text{(cell state update)} \\
 o_t &= \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) & \text{(output gate)} \\
 h_t &= o_t \odot \tanh(C_t) & \text{(hidden state)}
 \end{aligned}
-$$
+$$ 
+
 
 ---
 
