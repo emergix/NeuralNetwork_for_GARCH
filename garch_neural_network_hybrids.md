@@ -24,6 +24,8 @@ Recent studies have applied more complex architectures such as **LSTM (Long Shor
 - **Zhang et al. (2020)** – Introduced an LSTM-GARCH hybrid where GARCH models short-term volatility and LSTM captures long-term dependencies.
 - **Qiu et al. (2021)** – Used CNN-LSTM structures on top of GARCH filters to extract spatial-temporal features from multivariate financial time series.
 
+📄 Details in  : [Zhang_LSTM_GARCH.md](./Zhang_LSTM_GARCH.md)
+
 ### 3. **GARCH Integrated into Network Architectures**
 Some approaches embed the GARCH volatility equations directly into neural network layers, learning both the parametric and nonlinear structure end-to-end.
 
