@@ -39,7 +39,7 @@ $$
 $$ D_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) $$
 
 $$
-C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t \quad \text{(cell state update)}
+C_t = f_t \odot C_{t-1} + i_t \odot D_t \quad \text{(cell state update)}
 $$
 
 $$
