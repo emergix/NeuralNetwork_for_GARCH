@@ -46,35 +46,35 @@
 
 ```mermaid
 flowchart LR
-  subgraph Data[Sources de données]
-    A1[Marchés temps réel<br/>(Ticks / 1m / 5m / Daily)]
-    A2[Vol implicite & surfaces<br/>(Options listées)]
-    A3[Facteurs / Macro / News]
+  subgraph Data["Sources de donnees"]
+    A1["Marches temps reel\n(Ticks / 1m / 5m / Daily)"]
+    A2["Vol implicite & surfaces\n(Options listees)"]
+    A3["Facteurs / Macro / News"]
   end
 
-  subgraph Prep[Pré-traitement & GARCH]
-    B1[Nettoyage / Alignement<br/>+ z-score par actif]
-    B2[GARCH / EGARCH / GJR par actif<br/>σ_t, résidus standardisés ε_t]
-    B3[Fenêtrage L × N<br/>(construction tenseurs)]
+  subgraph Prep["Pre-traitement & GARCH"]
+    B1["Nettoyage / Alignement\n+ z-score par actif"]
+    B2["GARCH / EGARCH / GJR par actif\nsigma_t, residus standardises eps_t"]
+    B3["Fenetrage L x N\n(construction tenseurs)"]
   end
 
-  subgraph NN[Feature learning & Forecast]
-    C1[Bloc CNN (spatial)<br/>co-mouvements cross-section]
-    C2[Bloc LSTM (temporel)<br/>mémoire & régimes]
-    C3[Tête de sortie<br/>μ_vol(t+h), quantiles, incertitude]
+  subgraph NN["Feature learning & Forecast"]
+    C1["Bloc CNN (spatial)\nco-mouvements cross-section"]
+    C2["Bloc LSTM (temporel)\nmemoire & regimes"]
+    C3["Tete de sortie\nmu_vol(t+h), quantiles, incertitude"]
   end
 
-  subgraph Orchestration[Orchestration & Monitoring]
-    D1[Backtest walk-forward<br/>PnL, Sharpe, turnover]
-    D2[Évaluation en continu<br/>drift & recalibrage]
-    D3[Explainability<br/>Filtres CNN, importance temporelle]
+  subgraph Orchestration["Orchestration & Monitoring"]
+    D1["Backtest walk-forward\nPnL, Sharpe, turnover"]
+    D2["Evaluation en continu\ndrift & recalibrage"]
+    D3["Explainability\nFiltres CNN, importance temporelle"]
   end
 
-  subgraph Consumers[Consommateurs côté desk]
-    E1[Pricing surfaces<br/>(SABR / SVI / Bergomi)]
-    E2[Trading vol<br/>(variance / vol swaps, VIX, options)]
-    E3[Hedging Vega / Gamma]
-    E4[Risk<br/>(VaR / ES, stress tests)]
+  subgraph Consumers["Consommateurs cote desk"]
+    E1["Pricing surfaces\n(SABR / SVI / Bergomi)"]
+    E2["Trading vol\n(variance / vol swaps, VIX, options)"]
+    E3["Hedging Vega / Gamma"]
+    E4["Risk\n(VaR / ES, stress tests)"]
   end
 
   A1 --> B1
@@ -88,5 +88,6 @@ flowchart LR
   C3 --> E2
   C3 --> E3
   C3 --> E4
+
 
 ```
