@@ -37,7 +37,7 @@ i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) \quad \text{(input gate)}
 $$
 
 $$
-\tilde{C}_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) \text{ (candidate cell state)}
+C'_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) \quad \text{(candidate cell state)}
 $$
 
 $$
