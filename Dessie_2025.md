@@ -88,6 +88,26 @@ flowchart LR
   C3 --> E2
   C3 --> E3
   C3 --> E4
+```
 
+```mermaid
+flowchart TD
+  S["Chaque run (ex: 09:05 CET)"] --> F["Prediction vol future\nsigma_hat(t+h), h = 1-5 j"]
+  F --> C["Comparer a vol implicite\nsigma_impl(t, maturite M)"]
 
+  C -->|"sigma_hat - sigma_impl > seuil_haut"| L["Long vol\n(achat variance, calls OTM, long VIX futures)"]
+  C -->|"sigma_impl - sigma_hat > seuil_bas"| S2["Short vol\n(vente variance, short straddles ou variance futures)"]
+  C -->|"abs(sigma_hat - sigma_impl) <= zone neutre"| N["Neutre / pas d'action"]
+
+  L --> R["Controles risque"]
+  S2 --> R
+  N --> END["Log & Monitoring"]
+
+  R --> R1["Limites: Vega, DVegaDVol, Gamma\n(avant / apres trade)"]
+  R --> R2["Stops & max drawdown\npar strategie"]
+  R --> R3["Stress scenarios\n(+20% vol, skew shift)"]
+  R1 --> EXEC["Ordre via OMS / EMS"]
+  R2 --> EXEC
+  R3 --> EXEC
+  EXEC --> END
 ```
