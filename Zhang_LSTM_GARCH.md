@@ -11,14 +11,11 @@ Zhang et al. (2020) proposed a hybrid framework combining **GARCH** and **Long S
 
 The conditional variance from the GARCH(1,1) process is computed as:
 
-$$
-\sigma_t^2 = \omega + \alpha \, \epsilon_{t-1}^2 + \beta \, \sigma_{t-1}^2
-$$
+$$\sigma_t^2 = \omega + \alpha  \varepsilon_{t-1}^2 + \beta  \sigma_{t-1}^2$$
 
 where:
-
 - $\sigma_t^2$ = conditional variance at time $t$
-- $\epsilon_{t-1}^2$ = lagged squared residual
+- $\varepsilon_{t-1}$ = lagged residual
 - $\omega > 0$, $\alpha \geq 0$, $\beta \geq 0$ = parameters satisfying $\alpha + \beta < 1$
 
 ---
@@ -29,14 +26,16 @@ The LSTM network receives a sequence of past returns $\{ r_{t-k}, \dots, r_{t-1}
 
 LSTM cell update equations:
 
-$$\begin{aligned}
-f_t &= \sigma(W_f \cdot [h_{t-1}, x_t] + b_f) &\text{(forget gate)} \\
-i_t &= \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) &\text{(input gate)} \\
-\tilde{C}_t &= \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) &\text{(candidate cell state)} \\
-C_t &= f_t \odot C_{t-1} + i_t \odot \tilde{C}_t &\text{(cell state update)} \\
-o_t &= \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) &\text{(output gate)} \\
-h_t &= o_t \odot \tanh(C_t) &\text{(hidden state)}
-\end{aligned}$$
+$$
+\begin{aligned}
+f_t &= \sigma(W_f \cdot [h_{t-1}, x_t] + b_f) & \text{(forget gate)} \\
+i_t &= \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) & \text{(input gate)} \\
+\tilde{C}_t &= \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) & \text{(candidate cell state)} \\
+C_t &= f_t \odot C_{t-1} + i_t \odot \tilde{C}_t & \text{(cell state update)} \\
+o_t &= \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) & \text{(output gate)} \\
+h_t &= o_t \odot \tanh(C_t) & \text{(hidden state)}
+\end{aligned}
+$$
 
 ---
 
@@ -44,18 +43,18 @@ h_t &= o_t \odot \tanh(C_t) &\text{(hidden state)}
 
 The final volatility prediction is a weighted combination of GARCH and LSTM outputs:
 
-$$\hat{\sigma}_t^2 = \lambda \, \sigma_{t,\text{GARCH}}^2 + (1 - \lambda) \, \sigma_{t,\text{LSTM}}^2$$
+$$\hat{\sigma}_t^2 = \lambda  \sigma_{t,\text{GARCH}}^2 + (1 - \lambda)  \sigma_{t,\text{LSTM}}^2$$
 
 where $\lambda \in [0,1]$ is tuned via validation.
 
 ---
 
 #### **Key Insights**
-
 - The GARCH model captures immediate volatility clustering effects.
 - The LSTM network accounts for nonlinear, long-memory patterns.
 - The hybrid improves **out-of-sample volatility forecasting accuracy**, especially in high-volatility regimes.
 
+---
 
 ## **Practical Use of LSTM-GARCH Hybrid Models on a Derivatives Trading Desk**
 
@@ -65,7 +64,6 @@ The main idea is to combine short-term market dynamics (from GARCH) with long-te
 ---
 
 ### **1. Volatility Surface Forecasting**
-
 - **Objective:** Predict the *future* dynamics of the implied volatility surface (IVS) for options.
 - **How:**  
   1. Use GARCH to model near-term volatility clustering.  
@@ -78,7 +76,6 @@ The main idea is to combine short-term market dynamics (from GARCH) with long-te
 ---
 
 ### **2. Trading Variance and Volatility Swaps**
-
 - **Objective:** Identify mispricings between implied variance (from options) and forecasted realized variance.
 - **How:**  
   - Use LSTM-GARCH to forecast the **realized variance** over the swap horizon.  
@@ -90,7 +87,6 @@ The main idea is to combine short-term market dynamics (from GARCH) with long-te
 ---
 
 ### **3. Exotic Option Pricing Adjustments**
-
 - **Objective:** Improve pricing and hedging of path-dependent derivatives (barriers, autocallables, cliquets).
 - **How:**  
   - Replace constant-vol or flat smile assumptions in pricing models with volatility forecasts from LSTM-GARCH.
@@ -101,7 +97,6 @@ The main idea is to combine short-term market dynamics (from GARCH) with long-te
 ---
 
 ### **4. Intraday Risk Management**
-
 - **Objective:** Anticipate intraday volatility spikes that could affect Greeks and margin requirements.
 - **How:**  
   - Feed intraday data into a short-horizon LSTM-GARCH variant.
@@ -112,7 +107,6 @@ The main idea is to combine short-term market dynamics (from GARCH) with long-te
 ---
 
 ### **5. Statistical Arbitrage on Volatility Products**
-
 - **Objective:** Trade VIX futures, variance futures, or listed volatility ETFs.
 - **How:**  
   - Forecast short-term realized vol and compare with VIX term structure.
@@ -123,7 +117,6 @@ The main idea is to combine short-term market dynamics (from GARCH) with long-te
 ---
 
 ### **Implementation Notes**
-
 - **Data Sources:**  
   - Historical returns, realized volatilities, and option-implied volatilities.
 - **Integration:**  
