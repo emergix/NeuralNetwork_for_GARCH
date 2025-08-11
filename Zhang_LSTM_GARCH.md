@@ -57,7 +57,7 @@ $$
 
 The final volatility prediction is a weighted combination of GARCH and LSTM outputs:
 
-$$\hat{\sigma}_t^2 = \lambda  \sigma_{t,\text{GARCH}}^2 + (1 - \lambda)  \sigma_{t,\text{LSTM}}^2$$
+$$\Sigma_t^2 = \lambda  \sigma_{t,\text{GARCH}}^2 + (1 - \lambda)  \sigma_{t,\text{LSTM}}^2$$
 
 where $\lambda \in [0,1]$ is tuned via validation.
 
