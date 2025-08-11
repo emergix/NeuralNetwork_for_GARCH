@@ -20,20 +20,24 @@ where:
 
 ---
 
+
+
 #### **2. LSTM Component**
 
 The LSTM network receives a sequence of past returns $\{ r_{t-k}, \dots, r_{t-1} \}$ or past GARCH volatilities $\{ \sigma_{t-k}^2, \dots, \sigma_{t-1}^2 \}$ and learns to produce an adjusted volatility forecast.
 
 LSTM cell update equations:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 f_t &= \sigma(W_f \cdot [h_{t-1}, x_t] + b_f) & \text{(forget gate)} \\
 i_t &= \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) & \text{(input gate)} \\
 \tilde{C}_t &= \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) & \text{(candidate cell state)} \\
 C_t &= f_t \odot C_{t-1} + i_t \odot \tilde{C}_t & \text{(cell state update)} \\
 o_t &= \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) & \text{(output gate)} \\
 h_t &= o_t \odot \tanh(C_t) & \text{(hidden state)}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
