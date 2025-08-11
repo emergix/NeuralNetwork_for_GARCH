@@ -29,15 +29,28 @@ The LSTM network receives a sequence of past returns $\{ r_{t-k}, \dots, r_{t-1}
 LSTM cell update equations:
 
 $$
-\begin{aligned}
-f_t &= \sigma(W_f \cdot [h_{t-1}, x_t] + b_f) & \text{(forget gate)} \\
-i_t &= \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) & \text{(input gate)} \\
-\tilde{C}_t &= \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) & \text{(candidate cell state)} \\
-C_t &= f_t \odot C_{t-1} + i_t \odot \tilde{C}_t & \text{(cell state update)} \\
-o_t &= \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) & \text{(output gate)} \\
-h_t &= o_t \odot \tanh(C_t) & \text{(hidden state)}
-\end{aligned}
-$$ 
+f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f) \quad \text{(forget gate)}
+$$
+
+$$
+i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) \quad \text{(input gate)}
+$$
+
+$$
+\tilde{C}_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) \quad \text{(candidate cell state)}
+$$
+
+$$
+C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t \quad \text{(cell state update)}
+$$
+
+$$
+o_t = \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) \quad \text{(output gate)}
+$$
+
+$$
+h_t = o_t \odot \tanh(C_t) \quad \text{(hidden state)}
+$$
 
 
 ---
