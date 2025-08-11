@@ -36,7 +36,7 @@ $$
 i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) \quad \text{(input gate)}
 $$
 
-$$ {\tilde{C}}_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) $$
+$$ \hat{C}_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) $$
 
 $$
 C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t \quad \text{(cell state update)}
