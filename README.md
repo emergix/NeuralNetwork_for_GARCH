@@ -32,7 +32,16 @@ In the late 1970s, econometricians began to look for models that could capture t
 
   This breakthrough earned him the **2003 Nobel Prize in Economics**.
 
-- **1986** – Tim Bollerslev extended the idea to allow persistence in volatility, creating the **GARCH (Generalized ARCH)** model:  
+- **1986** – Tim Bollerslev extended the idea to allow persistence in volatility, creating the **GARCH (Generalized ARCH)** model:
+
+<p align="center">
+$$
+\sigma_t^2 = \omega + \sum_{i=1}^q \alpha_i \, \epsilon_{t-i}^2 
+             + \sum_{j=1}^p \beta_j \, \sigma_{t-j}^2
+$$
+</p>
+
+
 
  $\sigma_t^2 = \omega + \sum_{i=1}^q \alpha_i \epsilon_{t-i}^2 + \sum_{j=1}^p \beta_j \sigma_{t-j}^2$
 
