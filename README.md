@@ -42,10 +42,6 @@ $$
 </p>
 
 
-
- $\sigma_t^2 = \omega + \sum_{i=1}^q \alpha_i \epsilon_{t-i}^2 + \sum_{j=1}^p \beta_j \sigma_{t-j}^2$
-
-
   This formulation became the workhorse of financial econometrics.
 
 Since then, countless variations have been developed:  
