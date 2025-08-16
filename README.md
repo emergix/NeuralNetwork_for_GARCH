@@ -11,9 +11,6 @@ We aim to:
 - Illustrate how neural network methods outperform traditional optimization in speed and robustness
 - Show practical financial use cases in **asset management** and **exotic options trading**
 
-First we presentes a few references on the different type of GARCH models that are used in finance:
-
-📄 Details in  : [garch_asset_management_en.md](./garch_asset_management_en.md)
 
 ---
 
@@ -88,9 +85,13 @@ Results: Over a one-year live deployment period, the strategy achieved a 15% red
 This use case demonstrates how hybridizing deep learning with econometric structure can bring tangible performance gains in real-world financial settings—bridging the gap between theoretical volatility modeling and practical asset management needs.
 
 
+
 ## References for the uses of GARCH Calibration in asset management
 
 Here is a list a cases where the use of a calibrated garch brings added value to asset management tasks.
+
+📄 Details in  : [garch_asset_management_en.md](./garch_asset_management_en.md)
+
 
 📄 Details in  : [garch_asset_management_references.md](./garch_asset_management_references.md)
 
