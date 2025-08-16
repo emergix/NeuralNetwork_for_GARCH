@@ -17,6 +17,18 @@ First we presentes a few references on the different type of GARCH models that a
 
 ---
 
+## 🛠️ Simples examples 
+
+This blog will share:
+- Python notebooks using `PyTorch` or `TensorFlow`
+
+ [garch_pytorch.md](./garch_pytorch.md)
+  
+- Exploratory backtests and volatility forecasts
+- Visual insights via `matplotlib` or `plotly`
+- Integration examples for quant desks
+
+---
 ## GARCH Revolution: How Deep Learning accelerates GARCH Calibration and the consequences for financial applications
 
 # Introduction
@@ -161,18 +173,6 @@ Recent studies explore **GARCH models integrated with neural networks** (hybrid 
 📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
 
 
-## 🛠️ Technical Stack
-
-This blog will share:
-- Python notebooks using `PyTorch` or `TensorFlow`
-
- [garch_pytorch.md](./garch_pytorch.md)
-  
-- Exploratory backtests and volatility forecasts
-- Visual insights via `matplotlib` or `plotly`
-- Integration examples for quant desks
-
----
 
 ## 🚀 Get Involved
 
