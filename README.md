@@ -13,6 +13,40 @@ We aim to:
 
 
 ---
+## 📜 A Short History of GARCH
+
+Financial returns are notoriously *heteroskedastic* — their variance is not constant over time.  
+Periods of calm alternate with bursts of turbulence, a phenomenon traders know as **volatility clustering**.  
+
+In the late 1970s, econometricians began to look for models that could capture this feature:
+
+- **1973** – Black & Scholes introduce their famous option pricing model, which assumes *constant volatility*.  
+  Traders quickly noticed that this was unrealistic: implied volatility smiles and term structures appeared.
+
+- **1982** – Robert Engle proposed the **ARCH (Autoregressive Conditional Heteroskedasticity)** model.  
+  Instead of treating volatility as constant, Engle suggested modeling it as a function of past squared returns:  
+
+  $$
+  \sigma_t^2 = \alpha_0 + \alpha_1 \, \epsilon_{t-1}^2 + \dots + \alpha_q \, \epsilon_{t-q}^2
+  $$
+
+  This breakthrough earned him the **2003 Nobel Prize in Economics**.
+
+- **1986** – Tim Bollerslev extended the idea to allow persistence in volatility, creating the **GARCH (Generalized ARCH)** model:  
+
+  $$
+  \sigma_t^2 = \omega + \sum_{i=1}^q \alpha_i \, \epsilon_{t-i}^2 + \sum_{j=1}^p \beta_j \, \sigma_{t-j}^2
+  $$
+
+  This formulation became the workhorse of financial econometrics.
+
+Since then, countless variations have been developed:  
+EGARCH, TGARCH, NGARCH, FIGARCH… each adapting GARCH to capture asymmetry, long memory, or other empirical features of financial markets.
+
+---
+
+👉 In short: **GARCH was born out of the need to realistically capture the changing, clustered nature of volatility in financial returns** — something essential for risk management, option pricing, and trading strategies.
+
 
 ## 🛠️ Simple Examples
 
