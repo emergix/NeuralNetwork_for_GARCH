@@ -17,17 +17,19 @@ First we presentes a few references on the different type of GARCH models that a
 
 ---
 
-## 🛠️ Simples examples 
+## 🛠️ Simple Examples
 
-This blog will share:
-- Python notebooks using `PyTorch` or `TensorFlow`
+To make concepts concrete, this blog will include hands-on demonstrations and ready-to-run notebooks.  
+You’ll find:
 
- [garch_pytorch.md](./garch_pytorch.md)
-  
-- Exploratory backtests and volatility forecasts
-- Visual insights via `matplotlib` or `plotly`
-- Integration examples for quant desks
+- **Python notebooks** implementing GARCH models with modern libraries like `PyTorch` and `TensorFlow`.  
+  → Example: [garch_pytorch.md](./garch_pytorch.md)
 
+- **Exploratory backtests** showing how volatility forecasts perform on real market data.
+
+- **Visual insights** using `matplotlib` and `plotly` to illustrate volatility clustering, leverage effects, and forecast horizons.
+
+- **Practical integration examples** showing how GARCH-based forecasts can be plugged into workflows on a **quant trading desk**.
 ---
 ## GARCH Revolution: How Deep Learning accelerates GARCH Calibration and the consequences for financial applications
 
