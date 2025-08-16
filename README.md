@@ -34,7 +34,14 @@ In the late 1970s, econometricians began to look for models that could capture t
 
 - **1986** – Tim Bollerslev extended the idea to allow persistence in volatility, creating the **GARCH (Generalized ARCH)** model:  
 
-  $$\sigma_t^2 = \omega + \sum_{i=1}^q \alpha_i \, \epsilon_{t-i}^2 + \sum_{j=1}^p \beta_j \, \sigma_{t-j}^2$$
+
+  $$
+  \sigma_t^2 = \alpha_0 + \alpha_1 \, \epsilon_{t-1}^2 + \dots + \alpha_q \, \epsilon_{t-q}^2
+  $$
+  
+  $$
+  \sigma_t^2 = \omega + \sum_{i=1}^q \alpha_i \, \epsilon_{t-i}^2 + \sum_{j=1}^p \beta_j \, \sigma_{t-j}^2
+  $$
 
   This formulation became the workhorse of financial econometrics.
 
