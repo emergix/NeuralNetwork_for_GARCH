@@ -35,6 +35,8 @@ This function is minimized using gradient descent.
 ## 🐍 Example Python Code
 
 ```python
+__all__ = ["GARCH11", "negative_log_likelihood"]
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
