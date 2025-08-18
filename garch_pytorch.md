@@ -66,6 +66,9 @@ def negative_log_likelihood(model, returns):
 
 ## 🐍 Example of use of the  Code
 
+You need first to put in a file named garch_model.py the preceding code.
+Then in a jupyter notebook you can use the model, by copying the following:
+
 ```python
 
 import torch
