@@ -49,7 +49,7 @@ EGARCH, TGARCH, NGARCH, FIGARCH… each adapting GARCH to capture asymmetry, lon
 
 ---
 
-👉 In short: **GARCH was born out of the need to realistically capture the changing, clustered nature of volatility in financial returns** — something essential for risk management, option pricing, and trading strategies.
+👉 In short: **GARCH was born out of the need to realistically capture the changing, clustered nature of volatility in financial returns** — something essential for asset management, risk management, option pricing, and trading strategies.
 
 
 ## 🛠️ Simple Examples
