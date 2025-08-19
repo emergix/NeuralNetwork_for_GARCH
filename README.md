@@ -57,11 +57,13 @@ EGARCH, TGARCH, NGARCH, FIGARCH… each adapting GARCH to capture asymmetry, lon
 To make concepts concrete, this blog will include hands-on demonstrations and ready-to-run notebooks.  
 You’ll find:
 
-- **Python notebooks** implementing GARCH models with modern libraries like `PyTorch` and `TensorFlow`.  
-  → Example: [garch_pytorch.md](./garch_pytorch.md)
+- **Python notebooks** implementing GARCH models with modern libraries like `PyTorch` .
+This is a simple example.
+-  → Example: [garch_pytorch.md](./garch_pytorch.md)
 
 - **Exploratory backtests** showing how volatility forecasts perform on real market data.
-  → Example: [Exploratory_GARCH_Backtest_Documentation.md](./Exploratory_GARCH_Backtest_Documentation.md)
+Here we try to analyse the quality of the calibration through numerous statistical tolls and graphics. We also try several version of the GARCH model (GARCH, EGARCH, GJR-GARCH)
+- → Example: [Exploratory_GARCH_Backtest_Documentation.md](./Exploratory_GARCH_Backtest_Documentation.md)
   
 - **Visual insights** using `matplotlib` and `plotly` to illustrate volatility clustering, leverage effects, and forecast horizons.
 
