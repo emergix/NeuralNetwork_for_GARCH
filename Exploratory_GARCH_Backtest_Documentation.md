@@ -6,6 +6,7 @@ This document presents a comprehensive **walkthrough** of the notebook for explo
 > **Scope:** Data download, exploratory analysis, multiple GARCH variants (GARCH/EGARCH/GJR), rolling out-of-sample forecasts, statistical & financial evaluation, and practical volatility-timing strategies — with robust fallbacks (alternate tickers and synthetic data).
 >
 # 🗂️ To Jump Directly to the notebook : 
+🧠
 
 ---
 
