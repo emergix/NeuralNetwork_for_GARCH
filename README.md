@@ -63,7 +63,7 @@ This is a simple example.
 
 - **Exploratory backtests** showing how volatility forecasts perform on real market data.
 Here we try to analyse the quality of the calibration through numerous statistical tolls and graphics. We also try several version of the GARCH model (GARCH, EGARCH, GJR-GARCH)
-- → Example: [Exploratory_GARCH_Backtest_Documentation.md](./Exploratory_GARCH_Backtest_Documentation.md)
+- → Example: [Exploratory_GARCH_Backtest.md](./Exploratory_GARCH_Backtest.md)
   
 - **Visual insights** using `matplotlib` and `plotly` to illustrate volatility clustering, leverage effects, and forecast horizons.
 
