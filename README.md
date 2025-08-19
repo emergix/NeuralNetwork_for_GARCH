@@ -59,11 +59,11 @@ You’ll find:
 
 - **Python notebooks** implementing GARCH models with modern libraries like `PyTorch` .
 This is a simple example.
--  → Example: [garch_pytorch.md](./garch_pytorch.md)
+-  → Commented Code : [garch_pytorch.md](./garch_pytorch.md)
 
 - **Exploratory backtests** showing how volatility forecasts perform on real market data.
 Here we try to analyse the quality of the calibration through numerous statistical tolls and graphics. We also try several version of the GARCH model (GARCH, EGARCH, GJR-GARCH)
-- → Example: [Exploratory_GARCH_Backtest.md](./Exploratory_GARCH_Backtest.md)
+- → Code Presentation and Code : [Exploratory_GARCH_Backtest.md](./Exploratory_GARCH_Backtest.md)
   
 - **Visual insights** using `matplotlib` and `plotly` to illustrate volatility clustering, leverage effects, and forecast horizons.
 
