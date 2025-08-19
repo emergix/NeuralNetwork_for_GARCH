@@ -61,7 +61,8 @@ You’ll find:
   → Example: [garch_pytorch.md](./garch_pytorch.md)
 
 - **Exploratory backtests** showing how volatility forecasts perform on real market data.
-
+  → Example: [Exploratory_GARCH_Backtest_Documentation.md](./Exploratory_GARCH_Backtest_Documentation.md)
+  
 - **Visual insights** using `matplotlib` and `plotly` to illustrate volatility clustering, leverage effects, and forecast horizons.
 
 - **Practical integration examples** showing how GARCH-based forecasts can be plugged into workflows on a **quant trading desk**.
