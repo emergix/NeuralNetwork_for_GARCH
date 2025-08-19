@@ -4,6 +4,8 @@
 This document presents a comprehensive **walkthrough** of the notebook for exploratory backtests of **GARCH volatility forecasts** on real market data (S&P 500), and provides a **function-by-function commentary** so readers can understand, audit, and extend the code.
 
 > **Scope:** Data download, exploratory analysis, multiple GARCH variants (GARCH/EGARCH/GJR), rolling out-of-sample forecasts, statistical & financial evaluation, and practical volatility-timing strategies — with robust fallbacks (alternate tickers and synthetic data).
+>
+#To Jump Directly to the notebook : 
 
 ---
 
