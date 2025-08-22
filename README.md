@@ -255,7 +255,7 @@ The study concludes that neural networks are a promising tool for GARCH calibrat
 Blel, M. R. (2024). *Neural Network method for GARCH parameters calibration*. Laboratoire de Probabilités Statistiques et Modélisation (LPSM).  
 [LinkedIn Profile](https://www.linkedin.com/in/mohamed-raed-blel-link)
 
-## Complementary studies
+## Complementary Studies
 
 You will here additional commentaries on the paper
 
