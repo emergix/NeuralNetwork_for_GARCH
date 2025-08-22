@@ -4,7 +4,7 @@
 
 ## 📌 Purpose of the Blog
 
-This blog explores how neural networks can be used to calibrate the parameters of GARCH models, and how this approach can bring real value to practitioners in finance.
+This blog explores how neural networks can be used to calibrate the parameters of GARCH models, enhence their potential with hybrid models and how this approach can bring real value to practitioners in finance.
 
 We aim to:
 - Present the theoretical foundations behind GARCH models and their calibration
