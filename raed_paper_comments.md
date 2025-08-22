@@ -32,7 +32,5 @@ First Correction to the formla (4) :
 -  → Comments : [PDF](./Correction_GARCH6.pdf)
   
 -  → Mathematica Notebook :
-    [PDF](./Moments_GARCH.pdf)  [.nb](./Moments_GARCH.nb)
-
 [![PDF](https://img.shields.io/badge/PDF-0b5fff)](./Moments_GARCH.pdf)
 [![PDF](https://img.shields.io/badge/Mathematica-ff486e)](./Moments_GARCH.nb)
