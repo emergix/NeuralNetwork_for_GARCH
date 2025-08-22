@@ -26,3 +26,6 @@ This approach differs from traditional optimization methods in several important
 ---
 
 👉 Next step: we can add **your personal comments** in section 2 (strengths, limitations, extensions).  
+
+First Correction to the formla (4) :
+
