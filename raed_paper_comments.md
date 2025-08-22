@@ -1,4 +1,4 @@
-# 📄 Commentaries on "Neural Network Method for GARCH Parameters Calibration"
+# 📄 Notes on "Neural Network Method for GARCH Parameters Calibration"
 
 ## 1. Reminder of the Paper’s Approach
 
@@ -25,13 +25,12 @@ This approach differs from traditional optimization methods in several important
 
 ---
 
-👉 Tasks.  
+👉 Note 1.  
 
 First Correction to the formla (4) :
 
 -  → Comments : [PDF](./Correction_GARCH6.pdf)
   
--  → Mathematica Notebook : [PDF](./Moments_GARCH.pdf)
-  
-- → Mathematica Notebook : [.nb](./Moments_GARCH.nb)
+-  → Mathematica Notebook :
+    [PDF](./Moments_GARCH.pdf)  [.nb](./Moments_GARCH.nb)
 
