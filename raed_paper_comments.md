@@ -34,3 +34,5 @@ First Correction to the formla (4) :
 -  → Mathematica Notebook :
     [PDF](./Moments_GARCH.pdf)  [.nb](./Moments_GARCH.nb)
 
+[![PDF](https://img.shields.io/badge/PDF-English-0b5fff)](./Moments_GARCH.pdf)
+[![PDF](https://img.shields.io/badge/Mathematica-Français-ff486e)](./Moments_GARCH.nb)
