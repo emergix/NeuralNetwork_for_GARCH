@@ -216,6 +216,27 @@ Recent studies explore **GARCH models integrated with neural networks** (hybrid 
 
 📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
 
+### Neural Network Method for GARCH Parameters Calibration
+
+This paper presents a novel neural network approach to estimate and calibrate the parameters of GARCH(1,1) models, offering an alternative to traditional optimization methods. The author introduces several key contributions:
+
+1. **Improved Neural Network Architecture** – A deep network with sinusoidal activations and sigmoid outputs is developed to estimate GARCH parameters, ensuring stability and accurate predictions.  
+2. **Corrected Formulas & Data Generation** – Corrections are applied to the autocovariance function of squared returns, and synthetic datasets are built from higher-order moments (second, fourth, and sixth) to train the network.  
+3. **Comparative Analysis** – The performance of the neural network is benchmarked against direct minimization algorithms (SLSQP, Differential Evolution, Couenne, Random Search, etc.). While traditional methods face difficulties due to irregular geometries, local minima, or computational inefficiency, the neural network demonstrates superior robustness, speed, and accuracy, even under noisy or perturbed data.  
+4. **Applications** – The approach is successfully extended to time-series data, maximum likelihood tests, and calibration of the SABR model. Results show that neural networks can predict GARCH parameters as accurately as classical methods but with far greater computational efficiency.  
+
+## Conclusion
+The study concludes that neural networks are a promising tool for GARCH calibration, handling complex moment conditions and irregular optimization landscapes more effectively than conventional solvers, and offering practical advantages for financial modeling tasks such as volatility forecasting and implied volatility estimation.
+
+---
+
+📄 **Read the full paper here:** [Neural Network Method for GARCH Parameters Calibration (PDF)](./Raed_Main_paper.pdf)
+
+## Reference
+
+Blel, M. R. (2024). *Neural Network method for GARCH parameters calibration*. Laboratoire de Probabilités Statistiques et Modélisation (LPSM).  
+[LinkedIn Profile](https://www.linkedin.com/in/mohamed-raed-blel-link)
+
 
 
 ## 🚀 Get Involved
