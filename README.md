@@ -216,14 +216,32 @@ Recent studies explore **GARCH models integrated with neural networks** (hybrid 
 
 📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
 
-### Neural Network Method for GARCH Parameters Calibration
+# 🌟 Advancing GARCH Calibration with Neural Networks  
+*A Contribution within the Natixis Foundation Open-Source Project*
 
-This paper presents a novel neural network approach to estimate and calibrate the parameters of GARCH(1,1) models, offering an alternative to traditional optimization methods. The author introduces several key contributions:
+## Key Contributions of the Paper
 
-1. **Improved Neural Network Architecture** – A deep network with sinusoidal activations and sigmoid outputs is developed to estimate GARCH parameters, ensuring stability and accurate predictions.  
-2. **Corrected Formulas & Data Generation** – Corrections are applied to the autocovariance function of squared returns, and synthetic datasets are built from higher-order moments (second, fourth, and sixth) to train the network.  
-3. **Comparative Analysis** – The performance of the neural network is benchmarked against direct minimization algorithms (SLSQP, Differential Evolution, Couenne, Random Search, etc.). While traditional methods face difficulties due to irregular geometries, local minima, or computational inefficiency, the neural network demonstrates superior robustness, speed, and accuracy, even under noisy or perturbed data.  
-4. **Applications** – The approach is successfully extended to time-series data, maximum likelihood tests, and calibration of the SABR model. Results show that neural networks can predict GARCH parameters as accurately as classical methods but with far greater computational efficiency.  
+This paper introduces a **novel neural network framework** for estimating and calibrating the parameters of GARCH(1,1) models, pushing beyond traditional methods. The main contributions are:
+
+1. **Innovative Neural Network Architecture** – A deep model with sinusoidal activations and sigmoid outputs, ensuring robust and stable estimation of GARCH parameters.  
+2. **Mathematical Refinements** – Corrected autocovariance formulas and the use of higher-order moments (E[x²], Γ₄, Γ₆) for precise calibration.  
+3. **Superiority over Classical Methods** – Demonstrated advantages over direct minimization algorithms (SLSQP, Differential Evolution, Couenne, Random Search), especially in complex or noisy data environments.  
+4. **Practical Applications** – Effective extension to time-series calibration, maximum likelihood comparisons, and the SABR model, showing both accuracy and computational efficiency.  
+
+## Why It Matters
+By merging **statistical modeling** with **machine learning**, this work bridges a gap in volatility modeling. The neural network approach achieves **faster, more reliable calibration**, providing a valuable tool for financial applications such as volatility forecasting and implied volatility estimation.  
+
+---
+
+📄 **Read the full paper here:** [Neural Network Method for GARCH Parameters Calibration (PDF)](./Raed_Main_paper.pdf)
+
+## Reference
+
+Blel, M. R. (2024). *Neural Network method for GARCH parameters calibration*.  
+Laboratoire de Probabilités Statistiques et Modélisation (LPSM).  
+Conducted within the framework of the **Natixis Foundation Open-Source Project**.  
+[LinkedIn Profile](https://www.linkedin.com/in/mohamed-raed-blel-link)
+
 
 ## Conclusion
 The study concludes that neural networks are a promising tool for GARCH calibration, handling complex moment conditions and irregular optimization landscapes more effectively than conventional solvers, and offering practical advantages for financial modeling tasks such as volatility forecasting and implied volatility estimation.
