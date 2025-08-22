@@ -14,9 +14,6 @@ We aim to:
   - **Asset management** – improving portfolio risk forecasts and volatility modeling.  
   - **Exotic options trading** – enabling faster calibration of volatility surfaces and complex pricing models.  
 
----
-
-By bridging **statistical econometrics** with **machine learning**, we open the door to a new generation of tools that combine mathematical rigor with computational efficiency — paving the way for smarter risk management and trading strategies.
 
 ---
 ## 📜 A Short History of GARCH
