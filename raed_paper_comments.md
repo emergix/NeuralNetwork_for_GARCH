@@ -29,3 +29,4 @@ This approach differs from traditional optimization methods in several important
 
 First Correction to the formla (4) :
 
+-  → Comments : [PDF.md](./Correction_GARCH6.pdf)
