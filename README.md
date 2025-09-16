@@ -214,7 +214,7 @@ As a result, practitioners increasingly rely on Monte Carlo (MC) simulation as t
 These fast MC techniques are not just mathematical improvements—they are practical enablers of real-time decision-making in the pricing and risk management of exotic instruments.
 
 
-##  GARCH models integrated with Neural Network
+##  Integrating GARCH models  with Neural Network
 Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
 
 📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
