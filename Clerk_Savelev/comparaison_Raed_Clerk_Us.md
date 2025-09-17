@@ -20,7 +20,7 @@
 - **Pourquoi Raed plafonne** : (i) bornage sigmoïde des **trois** paramètres, (ii) pénalisation **α₁+β₁<1** trop molle, (iii) architecture trop **large** → optimisation instable, (iv) γ̂ₙ mal géré aux **grands lags** ⇒ **μ sous-estimé**.
 - **Ce qui marche ici** : (i) **acov_multi** + **WLS** sur log γ̂ₙ, (ii) **benchmarks** MLE Gauss/**Student-t** avec **constantes incluses** (AIC comparables), (iii) **profils ν** + **heatmap (ν, μ)** pour diagnostiquer où gagner (hausse de μ ~0.97–0.98 a amélioré la NLL).
 
-### Recommandations rapides pour ameliorer le travail de Raed
+### Ce qui pourrait ameliorer le travail de Raed
 1. Remplacer la pénalisation simple par une **barrière douce** couvrant **toutes** les contraintes de moments (Γ₄/Γ₆).
 2. Retirer la sigmoïde sur **α₀** (garder **softplus**), normaliser les features, **réduire** l’architecture.
 3. Estimer **μ** par **régression pondérée** sur **log γ̂ₙ** (lags 3..12/16), puis **β₁=μ−α₁**.
