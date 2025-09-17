@@ -129,7 +129,7 @@ comparaison_Raed_Clerk_Us.md
 
 ## 10) Comparaison entre Luke De Clerk and Sergey Savel'ev , Mohamed Raed Blel et notre approche
 
- → notebook python : [comparaison_Raed_Clerk_Us.md](./comparaison_Raed_Clerk_Us.md)
+ → tableau comparatif : [comparaison_Raed_Clerk_Us.md](./comparaison_Raed_Clerk_Us.md)
 
 
 
