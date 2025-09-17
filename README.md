@@ -72,9 +72,9 @@ Here we try to analyse the quality of the calibration through numerous statistic
 
 - **Practical integration examples** showing how GARCH-based forecasts can be plugged into workflows on a **quant trading desk**.
 ---
-## GARCH Revolution: How Deep Learning accelerates GARCH Calibration and the consequences for financial applications
+# GARCH Revolution: How Deep Learning accelerates GARCH Calibration and the consequences for financial applications
 
-# Introduction
+## Introduction
 Financial volatility modeling is fundamental to modern finance, underpinning critical applications such as option pricing, portfolio optimization, Value-at-Risk estimation, and systemic risk monitoring. Among the most widely used models, the GARCH (Generalized Autoregressive Conditional Heteroskedasticity) family provides a powerful framework for capturing time-varying volatility in asset returns. However, traditional calibration techniques, such as Maximum Likelihood Estimation (MLE) or Quasi-MLE (QMLE), face notable limitations in practice.
 
 First, slow computation speeds hinder their scalability. MLE procedures typically require iterative numerical optimization of a non-convex likelihood surface, which becomes especially time-consuming for high-frequency data or multivariate GARCH extensions. This delay can be a bottleneck in real-time applications such as high-frequency trading or risk monitoring dashboards.
