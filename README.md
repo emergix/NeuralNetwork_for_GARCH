@@ -216,7 +216,7 @@ These fast MC techniques are not just mathematical improvements—they are pract
 
 ---
 
-# 🌟 Calibration of GARCH(1,1) Opensource Project (Natixis Fondation)
+# 🌟 Calibration of GARCH(1,1) 
 ##  Advancing GARCH Calibration with Neural Networks  
 *A Contribution within the Natixis Foundation Open-Source Project*
 
