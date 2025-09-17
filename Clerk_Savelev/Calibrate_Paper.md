@@ -121,7 +121,15 @@ print(params)  # CalibratedParams(alpha0=..., alpha1=..., beta1=...)
 
  → Fichier python : [garch_ann_calibration.py](./garch_ann_calibration.py)
 
-## 8) Etude Complete de la calibration de GARCH(1,1) avec  reseau neuronal
+## 9) Etude Complete de la calibration de GARCH(1,1) avec  reseau neuronal
 
  → notebook python : [garch_ann_full_study.ipynb](./garch_ann_full_study.ipynb)
+
+comparaison_Raed_Clerk_Us.md
+
+## 10) Comparaison entre Luke De Clerk and Sergey Savel'ev , Mohamed Raed Blel et notre approche
+
+ → notebook python : [comparaison_Raed_Clerk_Us.md](./comparaison_Raed_Clerk_Us.md)
+
+
 
