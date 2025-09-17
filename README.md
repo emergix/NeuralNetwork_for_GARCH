@@ -93,9 +93,9 @@ Neural networks offer a transformative solution: **fast, robust, and scalable GA
 
 ---
 
-## 1. Asset Management Application: Optimizing Portfolios 
+# 1. Asset Management Application: Optimizing Portfolios 
 
-# The Challenge
+## The Challenge
 Portfolio managers need real-time volatility forecasts to:
 - Provide real-time volatility estimates for portfolio risk assessment
 - Improve Value-at-Risk (VaR) and Conditional VaR (CVaR) calculations
@@ -104,14 +104,14 @@ Portfolio managers need real-time volatility forecasts to:
 - Optimize allocations using Markowitz/Black-Litterman models
 - React to sudden market regime shifts
 
-# Neural Network Advantages
+## Neural Network Advantages
 | Feature | Benefit |
 |---------|---------|
 | **Real-time calibration** | <1-second parameter updates on streaming data |
 | **Outlier resistance** | Stable estimates during market crises |
 | **Path generation** | Simulate future volatility scenarios for stress testing |
 
-# Practical Use Case
+## Practical Use Case
 A large pension fund managing a diversified portfolio of equities and fixed income sought to improve the stability of its daily portfolio rebalancing strategy. Traditionally, the fund relied on a standard GARCH(1,1) model calibrated using Quasi-Maximum Likelihood Estimation (QMLE) to estimate short-term volatility for each asset class. While effective in calm markets, this approach frequently broke down during periods of market turbulence or structural shifts—leading to erratic allocation changes and increased turnover.
 
 To address this, the fund adopted a neural network (NN)-calibrated GARCH model, where the volatility dynamics were retained from the GARCH structure, but the calibration (i.e., the estimation of parameters such as ω,α,βω,α,β) was learned using a data-driven, end-to-end deep learning approach. Leveraging PyTorch and GPU acceleration, the model was trained on decades of historical returns, incorporating not only price-based inputs but also macroeconomic indicators and market sentiment features.
@@ -141,7 +141,7 @@ Here is a list a cases where the use of a calibrated garch brings added value to
 
 ---
 
-## 2. Exotic Options Trading: From GARCH to Stochastic Volatility
+# 2. Exotic Options Trading: From GARCH to Stochastic Volatility
 
 
 ## 🎯 Introduction
@@ -227,7 +227,7 @@ Laboratoire de Probabilités Statistiques et Modélisation (LPSM).
 Conducted within the framework of the **Natixis Foundation Open-Source Project**.  
 [LinkedIn Profile](https://www.linkedin.com/in/mohamed-raed-blel-link)
 
-### Key Contributions of the Paper
+## Key Contributions of the Paper
 
 This paper introduces a **novel neural network framework** for estimating and calibrating the parameters of GARCH(1,1) models, pushing beyond traditional methods. The main contributions are:
 
@@ -236,15 +236,15 @@ This paper introduces a **novel neural network framework** for estimating and ca
 3. **Superiority over Classical Methods** – Demonstrated advantages over direct minimization algorithms (SLSQP, Differential Evolution, Couenne, Random Search), especially in complex or noisy data environments.  
 4. **Practical Applications** – Effective extension to time-series calibration, maximum likelihood comparisons, and the SABR model, showing both accuracy and computational efficiency.  
 
-### Why It Matters
+## Why It Matters
 By merging **statistical modeling** with **machine learning**, this work bridges a gap in volatility modeling. The neural network approach achieves **faster, more reliable calibration**, providing a valuable tool for financial applications such as volatility forecasting and implied volatility estimation.  
 
 
-### How to get Moments of GARCH processes
+## How to get Moments of GARCH processes
 
 📄 Details in  : [raed_paper_comments.md](./raed_paper_comments.md)
 
-### Effective Calibration of GARCH(1,1) with Neural Networks
+## Effective Calibration of GARCH(1,1) with Neural Networks
 
 📄 Study in  : [Calibrate_Paper.md](./Clerk_Savelev/Calibrate_Paper.md)
 
@@ -260,7 +260,7 @@ Recent studies explore **GARCH models integrated with neural networks** (hybrid 
 📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
 
 
-## 🚀 Get Involved
+# 🚀 Get Involved
 
 Feel free to fork, star or contribute ideas! Whether you're a quant, a data scientist, or a curious student — insights and suggestions are welcome.
 
