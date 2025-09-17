@@ -123,5 +123,5 @@ print(params)  # CalibratedParams(alpha0=..., alpha1=..., beta1=...)
 
 ## 8) Etude Complete de la calibration de GARCH(1,1) avec  reseau neuronal
 
- → notebook python : [garch_ann_full_study.ipynb(./garch_ann_full_study.ipynb)
+ → notebook python : [garch_ann_full_study.ipynb](./garch_ann_full_study.ipynb)
 
