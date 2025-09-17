@@ -235,12 +235,6 @@ By merging **statistical modeling** with **machine learning**, this work bridges
 
 📄 **Read the full paper here:** [Neural Network Method for GARCH Parameters Calibration (PDF)](./Raed_Main_paper.pdf)
 
-
-#  Integrating GARCH models  with Neural Network
-Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
-
-📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
-
 ## Reference
 
 Blel, M. R. (2024). *Neural Network method for GARCH parameters calibration*.  
@@ -255,6 +249,12 @@ Conducted within the framework of the **Natixis Foundation Open-Source Project**
 ## Effective Calibration of GARCH(1,1) with Neural Networks
 
 📄 Study in  : [Calibrate_Paper.md](./Clerk_Savelev/Calibrate_Paper.md)
+
+
+#  Integrating GARCH models  with Neural Network
+Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
+
+📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
 
 
 ## Conclusion
