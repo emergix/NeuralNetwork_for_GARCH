@@ -113,3 +113,10 @@ print("Best val loss:", result.best_val_loss)
 returns = np.random.standard_t(df=6, size=20000) * 0.01  # exemple jouet
 params = cal.calibrate_from_empirical(returns)
 print(params)  # CalibratedParams(alpha0=..., alpha1=..., beta1=...)
+```
+
+---
+
+## 8) Module Fourni
+
+
