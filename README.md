@@ -247,15 +247,14 @@ Laboratoire de Probabilités Statistiques et Modélisation (LPSM).
 Conducted within the framework of the **Natixis Foundation Open-Source Project**.  
 [LinkedIn Profile](https://www.linkedin.com/in/mohamed-raed-blel-link)
 
-## 
-
 ## How to get Moments of GARCH processes
 
-📄 Details in  : [Calibrate_Paper.md.md](./Clerk_Savelev/Calibrate_Paper.md.md)
+📄 Details in  : [raed_paper_comments.md](./raed_paper_comments.md)
 
 ## Effective Calibration of GARCH(1,1) with Neural Networks
 
-📄 Study in  : [raed_paper_comments.md](./raed_paper_comments.md)
+📄 Study in  : [Calibrate_Paper.md](./Clerk_Savelev/Calibrate_Paper.md)
+
 
 ## Conclusion
 The study concludes that neural networks are a promising tool for GARCH calibration, handling complex moment conditions and irregular optimization landscapes more effectively than conventional solvers, and offering practical advantages for financial modeling tasks such as volatility forecasting and implied volatility estimation.
