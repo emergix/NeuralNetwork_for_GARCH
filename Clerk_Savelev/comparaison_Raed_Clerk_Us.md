@@ -1,6 +1,6 @@
 # Comparatif — De Clerk & Savel’ev vs Raed vs Notre pipeline
 
-| Axe | De Clerk & Savel’ev (2022) | Mohamed Raed Blel | Notre travail ici |
+| Axe | De Clerk & Savel’ev (2022) | Mohamed Raed Blel (2024) | Notre travail ici |
 |---|---|---|---|
 | **But principal** | Prédire **α₁** via ANN, puis **déduire β₁ et α₀** par formules fermées (à partir de Γ₄, σ²). | Tente d’**apprendre (α₀, α₁, β₁)** simultanément avec un NN; abandon partiel des formules fermées jugées instables. | Apprend **α₁** avec ANN (**acov_multi**), **estime μ=α₁+β₁** par régression (WLS) sur log γ̂ₙ, puis **β₁=μ−α₁**, **α₀=σ²(1−μ)**. |
 | **Entrées (features)** | Moments {E[x²], Γ₄, Γ₆} et/ou **autocovariances normalisées γ̂ₙ** (n clés: 2, 6, 10). | Moments + **γ̂ₙ multiples** + essais **L-moments**; résultats instables/bruités. | **acov_multi** (lags consécutifs, p.ex. 3..12/16), pas d’L-moments. |
