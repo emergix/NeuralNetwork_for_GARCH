@@ -251,7 +251,7 @@ Conducted within the framework of the **Natixis Foundation Open-Source Project**
 
 ## How to get Moments of GARCH processes
 
-📄 Details in  : [Calibrate_Paper.md.md](.//Calibrate_Paper.md.md)
+📄 Details in  : [Calibrate_Paper.md.md](./Clerk_Savelev/Calibrate_Paper.md.md)
 
 ## Effective Calibration of GARCH(1,1) with Neural Networks
 
