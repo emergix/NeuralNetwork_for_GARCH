@@ -10,6 +10,7 @@ This section describes how we calibrate a **GARCH(1,1)** model to the historical
 ### 1. **Data Preparation**
 We load a CSV file containing daily **opening prices** and compute the daily log-returns:
 ```python
+df = pd.read_csv("Data/air_liquide.csv", parse_dates=["Date"])
 df["log_return"] = 100 * (df["Open"] / df["Open"].shift(1)).apply(np.log)
 ```
 > Rescaling the returns ×100 ensures better numerical convergence of the optimizer.
