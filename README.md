@@ -219,10 +219,10 @@ Recent studies explore **GARCH models integrated with neural networks** (hybrid 
 
 📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
 
-# 🌟 Advancing GARCH Calibration with Neural Networks  
+##  Advancing GARCH Calibration with Neural Networks  
 *A Contribution within the Natixis Foundation Open-Source Project*
 
-## Key Contributions of the Paper
+### Key Contributions of the Paper
 
 This paper introduces a **novel neural network framework** for estimating and calibrating the parameters of GARCH(1,1) models, pushing beyond traditional methods. The main contributions are:
 
@@ -231,10 +231,12 @@ This paper introduces a **novel neural network framework** for estimating and ca
 3. **Superiority over Classical Methods** – Demonstrated advantages over direct minimization algorithms (SLSQP, Differential Evolution, Couenne, Random Search), especially in complex or noisy data environments.  
 4. **Practical Applications** – Effective extension to time-series calibration, maximum likelihood comparisons, and the SABR model, showing both accuracy and computational efficiency.  
 
-## Why It Matters
+### Why It Matters
 By merging **statistical modeling** with **machine learning**, this work bridges a gap in volatility modeling. The neural network approach achieves **faster, more reliable calibration**, providing a valuable tool for financial applications such as volatility forecasting and implied volatility estimation.  
 
 ---
+
+# 🌟 Calibration of GARCH(1,1) Opensource Project (Natixis Fondation)
 
 📄 **Read the full paper here:** [Neural Network Method for GARCH Parameters Calibration (PDF)](./Raed_Main_paper.pdf)
 
@@ -245,6 +247,15 @@ Laboratoire de Probabilités Statistiques et Modélisation (LPSM).
 Conducted within the framework of the **Natixis Foundation Open-Source Project**.  
 [LinkedIn Profile](https://www.linkedin.com/in/mohamed-raed-blel-link)
 
+## 
+
+## How to get Moments of GARCH processes
+
+📄 Details in  : [raed_paper_comments.md](./raed_paper_comments.md)
+
+## Effective Calibration of GARCH(1,1) with Neural Networks
+
+📄 Study in  : [raed_paper_comments.md](./raed_paper_comments.md)
 
 ## Conclusion
 The study concludes that neural networks are a promising tool for GARCH calibration, handling complex moment conditions and irregular optimization landscapes more effectively than conventional solvers, and offering practical advantages for financial modeling tasks such as volatility forecasting and implied volatility estimation.
@@ -258,11 +269,7 @@ The study concludes that neural networks are a promising tool for GARCH calibrat
 Blel, M. R. (2024). *Neural Network method for GARCH parameters calibration*. Laboratoire de Probabilités Statistiques et Modélisation (LPSM).  
 [LinkedIn Profile](https://www.linkedin.com/in/mohamed-raed-blel-link)
 
-## Complementary Studies
 
-You will here additional commentaries on the paper
-
-📄 Details in  : [raed_paper_comments.md](./raed_paper_comments.md)
 
 ## 🚀 Get Involved
 
