@@ -1,4 +1,4 @@
-# Comparatif — De Clerk & Savel’ev vs Papier étudiant vs Notre pipeline
+# Comparatif — De Clerk & Savel’ev vs Raed vs Notre pipeline
 
 | Axe | De Clerk & Savel’ev (2022) | Papier Raed | Notre travail ici |
 |---|---|---|---|
@@ -16,14 +16,14 @@
 
 ## Commentaires clés
 
-- **Philosophie** : De Clerk & Savel’ev privilégient un **design minimal** (ANN pour α₁ + formules), le papier étudiant tente le **tout-en-un**, notre approche **hybride** garde l’ANN pour α₁ mais **verrouille μ** via γ̂ₙ (stable) — c’est ce qui sécurise la **stationnarité** et évite de “forcer” α₀ dans [0,1].
+- **Philosophie** : De Clerk & Savel’ev privilégient un **design minimal** (ANN pour α₁ + formules), Raed tente le **tout-en-un**, notre approche **hybride** garde l’ANN pour α₁ mais **verrouille μ** via γ̂ₙ (stable) — c’est ce qui sécurise la **stationnarité** et évite de “forcer” α₀ dans [0,1].
 - **Pourquoi Raed plafonne** : (i) bornage sigmoïde des **trois** paramètres, (ii) pénalisation **α₁+β₁<1** trop molle, (iii) architecture trop **large** → optimisation instable, (iv) γ̂ₙ mal géré aux **grands lags** ⇒ **μ sous-estimé**.
 - **Ce qui marche ici** : (i) **acov_multi** + **WLS** sur log γ̂ₙ, (ii) **benchmarks** MLE Gauss/**Student-t** avec **constantes incluses** (AIC comparables), (iii) **profils ν** + **heatmap (ν, μ)** pour diagnostiquer où gagner (hausse de μ ~0.97–0.98 a amélioré la NLL).
 
-### Recommandations rapides pour le papier Raed
+### Recommandations rapides pour ameliorer le travail de Raed
 1. Remplacer la pénalisation simple par une **barrière douce** couvrant **toutes** les contraintes de moments (Γ₄/Γ₆).
 2. Retirer la sigmoïde sur **α₀** (garder **softplus**), normaliser les features, **réduire** l’architecture.
 3. Estimer **μ** par **régression pondérée** sur **log γ̂ₙ** (lags 3..12/16), puis **β₁=μ−α₁**.
 4. Évaluer sur série réelle avec **NLL/AIC** cohérents (Gauss **et** t), et, si besoin, un **affinage local** (Nelder–Mead) depuis l’ANN.
 
-**En bref** : De Clerk & Savel’ev posent une base **simple et robuste**; le papier Raed s’éparpille et perd en stabilité; notre pipeline **hybride** garde la vitesse de l’ANN tout en **contrôlant μ** et en **mesurant** correctement la qualité (NLL/AIC, ν-profil).
+**En bref** : De Clerk & Savel’ev posent une base **simple et robuste**; Raed s’éparpille et perd en stabilité; notre pipeline **hybride** garde la vitesse de l’ANN tout en **contrôlant μ** et en **mesurant** correctement la qualité (NLL/AIC, ν-profil).
