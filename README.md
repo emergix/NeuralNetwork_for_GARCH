@@ -69,7 +69,10 @@ Here we try to analyse the quality of the calibration through numerous statistic
 - → Code Presentation and Code : [Exploratory_GARCH_Backtest.md](./Exploratory_GARCH_Backtest.md)
 
 -  **Explore the implementations**:  
-  -  → Commented Code :[Garch_Calibration_Financial_Series](./Garch_Calibration_Financial_Series.md)
+-  → Commented Code :[Garch_Calibration_Financial_Series.md](./Garch_Calibration_Financial_Series.md)
+
+-  **Explore the implementations**:  
+-  → Commented Code :[Exploratory_GARCH_Backtest.md](./Exploratory_GARCH_Backtest.md)
   
 - **Visual insights** using `matplotlib` and `plotly` to illustrate volatility clustering, leverage effects, and forecast horizons.
 
