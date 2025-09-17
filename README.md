@@ -85,7 +85,7 @@ Third, instability during market regime shifts undermines the reliability of GAR
 
 These challenges highlight the need for more adaptive, robust, and computationally efficient approaches—motivating the integration of machine learning, Bayesian methods, or deep learning frameworks into modern GARCH modeling. These alternatives promise not only faster calibration but also better generalization across regimes and resilience to data imperfections.
 
-# Why Deep Learning will help us
+## Why Deep Learning will help us
 
   Deep learning can accelerate the calibration of GARCH models by leveraging automatic differentiation, parallel computation, and modern optimization techniques. Unlike traditional methods that often rely on manual gradient derivation and iterative optimization with limited scalability, deep learning frameworks (like PyTorch or TensorFlow) allow for efficient computation of gradients and batch-wise processing of large datasets. This enables faster convergence during training and makes it feasible to estimate GARCH parameters jointly across multiple time series or in hybrid models (e.g., LSTM-GARCH). Additionally, neural networks can learn complex volatility dynamics that extend beyond the linear assumptions of classical GARCH, offering both speed and modeling flexibility.
 
