@@ -67,6 +67,9 @@ This is a simple example.
 - **Exploratory backtests** showing how volatility forecasts perform on real market data.
 Here we try to analyse the quality of the calibration through numerous statistical tools and graphics. We also try several version of the GARCH model (GARCH, EGARCH, GJR-GARCH)
 - → Code Presentation and Code : [Exploratory_GARCH_Backtest.md](./Exploratory_GARCH_Backtest.md)
+
+-  **Explore the implementations**:  
+  -  → Commented Code :[Garch_Calibration_Financial_Series](./Garch_Calibration_Financial_Series.md)
   
 - **Visual insights** using `matplotlib` and `plotly` to illustrate volatility clustering, leverage effects, and forecast horizons.
 
@@ -263,10 +266,6 @@ Recent studies explore **GARCH models integrated with neural networks** (hybrid 
 # 🚀 Get Involved
 
 Feel free to fork, star or contribute ideas! Whether you're a quant, a data scientist, or a curious student — insights and suggestions are welcome.
-
-- **Explore the implementations**:  
-  [Main GitHub Repository](https://github.com/yourrepo/nn-garch-calibration.md) • 
-  [PyTorch Notebook](/notebooks/garch_calibration_pytorch.ipynb)
 - **Share your use case**: Contribute examples via PRs!
 
 ---
