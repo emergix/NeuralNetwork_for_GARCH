@@ -214,11 +214,9 @@ As a result, practitioners increasingly rely on Monte Carlo (MC) simulation as t
 These fast MC techniques are not just mathematical improvements—they are practical enablers of real-time decision-making in the pricing and risk management of exotic instruments.
 
 
-##  Integrating GARCH models  with Neural Network
-Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
+---
 
-📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
-
+# 🌟 Calibration of GARCH(1,1) Opensource Project (Natixis Fondation)
 ##  Advancing GARCH Calibration with Neural Networks  
 *A Contribution within the Natixis Foundation Open-Source Project*
 
@@ -234,11 +232,14 @@ This paper introduces a **novel neural network framework** for estimating and ca
 ### Why It Matters
 By merging **statistical modeling** with **machine learning**, this work bridges a gap in volatility modeling. The neural network approach achieves **faster, more reliable calibration**, providing a valuable tool for financial applications such as volatility forecasting and implied volatility estimation.  
 
----
-
-# 🌟 Calibration of GARCH(1,1) Opensource Project (Natixis Fondation)
 
 📄 **Read the full paper here:** [Neural Network Method for GARCH Parameters Calibration (PDF)](./Raed_Main_paper.pdf)
+
+
+#  Integrating GARCH models  with Neural Network
+Recent studies explore **GARCH models integrated with neural networks** (hybrid models)
+
+📄 Details in  : [garch_neural_network_hybrids.md](./garch_neural_network_hybrids.md)
 
 ## Reference
 
