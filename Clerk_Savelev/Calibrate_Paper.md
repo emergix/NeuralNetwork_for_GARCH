@@ -121,3 +121,7 @@ print(params)  # CalibratedParams(alpha0=..., alpha1=..., beta1=...)
 
  → Fichier python : [garch_ann_calibration.py](./garch_ann_calibration.py)
 
+## 8) Etude Complete de la calibration de GARCH(1,1) avec  reseau neuronal
+
+ → notebook python : [garch_ann_full_study.ipynb(./garch_ann_full_study.ipynb)
+
