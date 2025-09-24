@@ -222,7 +222,7 @@ These fast MC techniques are not just mathematical improvements—they are pract
 
 ---
 
-# 🎯 Calibration of GARCH(1,1) 
+# 🎯 3. Calibration of GARCH(1,1) with Neural Networks 
 ##  Advancing GARCH Calibration with Neural Networks  
 *A Contribution within the Natixis Foundation Open-Source Project*
 
