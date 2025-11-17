@@ -226,7 +226,7 @@ These fast MC techniques are not just mathematical improvements—they are pract
 ##  Advancing GARCH Calibration with Neural Networks  
 *A Contribution within the Natixis Foundation Open-Source Project*
 
-📄 **Read the full paper here:** [Neural Network Method for GARCH Parameters Calibration (PDF)](./Raed_Main_paper.pdf)
+📄 **Read the full paper here:** [Neural Network Method for GARCH Parameters Calibration (PDF)](./pdf/Raed_Main_paper.pdf)
 
 Blel, M. R. (2024). *Neural Network method for GARCH parameters calibration*.  
 Laboratoire de Probabilités Statistiques et Modélisation (LPSM).  
