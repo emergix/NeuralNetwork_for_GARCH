@@ -29,8 +29,8 @@ This approach differs from traditional optimization methods in several important
 
 First Correction to the formla (4) :
 
--  → Comments : [PDF](./Correction_GARCH6.pdf)
+-  → Comments : [PDF](./pdf/Correction_GARCH6.pdf)
   
 -  → Mathematica Notebook :
-[![PDF](https://img.shields.io/badge/PDF-0b5fff)](./Moments_GARCH.pdf)
+[![PDF](https://img.shields.io/badge/PDF-0b5fff)](./pdf/Moments_GARCH.pdf)
 [![PDF](https://img.shields.io/badge/Mathematica-ff486e)](./Moments_GARCH.nb)
