@@ -64,14 +64,11 @@ You’ll find:
 This is a simple example.
 -  → Commented Code : [garch_pytorch.md](./garch_pytorch.md)
 
-- **Exploratory backtests** showing how volatility forecasts perform on real market data.
-Here we try to analyse the quality of the calibration through numerous statistical tools and graphics. We also try several version of the GARCH model (GARCH, EGARCH, GJR-GARCH)
-- → Code Presentation and Code : [Exploratory_GARCH_Backtest.md](./Exploratory_GARCH_Backtest.md)
-
 -  **Explore the implementations**:  
 -  → Commented Code :[Garch_Calibration_Financial_Series.md](./Garch_Calibration_Financial_Series.md)
 
--  **Explore the implementations**:  
+-  **Explore the implementations**:
+-  Here we try to analyse the quality of the calibration through numerous statistical tools and graphics. We also try several version of the GARCH model (GARCH, EGARCH, GJR-GARCH)
 -  → Commented Code :[Exploratory_GARCH_Backtest.md](./Exploratory_GARCH_Backtest.md)
   
 - **Visual insights** using `matplotlib` and `plotly` to illustrate volatility clustering, leverage effects, and forecast horizons.
