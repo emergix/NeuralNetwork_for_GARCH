@@ -267,6 +267,7 @@ Recent studies explore **GARCH models integrated with neural networks** (hybrid 
 
 Feel free to fork, star or contribute ideas! Whether you're a quant, a data scientist, or a curious student — insights and suggestions are welcome.
 - **Share your use case**: Contribute examples via PRs!
+A blog will be developed shortly.
 
 ---
 
