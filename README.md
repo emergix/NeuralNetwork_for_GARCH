@@ -252,6 +252,10 @@ By merging **statistical modeling** with **machine learning**, this work bridges
 📄 Study in  : [Calibrate_Paper.md](./Clerk_Savelev/Calibrate_Paper.md)
 
 ---
+## In the following, we implement the Idea of the paper, using advanced concepts
+
+📄 Study in  : [README.md](./notebook/README.md)
+
 
 ## Conclusion
 The study concludes that neural networks are a promising tool for GARCH calibration, handling complex moment conditions and irregular optimization landscapes more effectively than conventional solvers, and offering practical advantages for financial modeling tasks such as volatility forecasting and implied volatility estimation.
