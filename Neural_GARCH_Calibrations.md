@@ -1,17 +1,3 @@
-# 📓 Notebooks Directory
-
-This directory contains practical implementations of Neural Network-based GARCH calibration methods. Each notebook demonstrates a complete workflow from data processing to real-world financial applications.
-
----
-
-## 🧠 Available Notebooks
-
-### 1. GARCH Calibration with Neural Networks
-
-## 📊 The Heston Stochastic Volatility Model
-
-The **Heston model** is a widely used stochastic volatility model in quantitative finance, particularly for pricing derivatives. Unlike Black-Scholes, which assumes constant volatility, Heston introduces a **random process for volatility itself**, capturing market phenomena such as the volatility smile and clustering.
-
 ### 🧮 Model Dynamics
 
 The asset price \( S_t \) and its variance \( v_t \) follow the system of stochastic differential equations:
