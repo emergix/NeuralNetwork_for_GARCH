@@ -52,7 +52,7 @@ The Heston model is commonly used for:
 
 
 
-[`garch_calibration.ipynb`](./garch_calibration.ipynb)  
+[`garch_calibration_pytorch.ipynb`](./garch_calibration_pytorch.ipynb)  
 *End-to-end workflow for calibrating GARCH parameters using neural networks*
 
 Key features:
