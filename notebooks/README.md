@@ -40,11 +40,7 @@ dv_t &= \kappa(\theta - v_t)\,dt + \sigma \sqrt{v_t}\,dW_t^v
 
 See the full calibration process using historical Air Liquide data:
 
-👉 The following notebook implements a calibration of GARCH idea , with a lot of refinements
-[`garch_ann_full_pipeline_v2.ipynb`](./garch_ann_full_pipeline_v2.ipynb)  
-*End-to-end workflow for calibrating GARCH parameters using neural networks*
-
-
+👉 A very simple way to do a GARCH calibration is the following:
 
 ```python
 # Core calibration workflow
@@ -62,9 +58,14 @@ heston_model.calibrate(initial_params=garch_params[['VL','persistence']])
 optimizer.run(volatility_forecast=garch_params['conditional_volatility'])
 ```
 
+👉 The following notebook implements a calibration of GARCH idea , with a lot of refinements
 
 # GARCH(1,1) — **Hybrid calibration**: ANN (acov_multi) + $$\mu$$ via WLS + MLE (Gaussian & Student‑t)  
 *(Notebook: `garch_ann_full_pipeline_v2.ipynb`, v2 “patches A–C”)*
+
+[`garch_ann_full_pipeline_v2.ipynb`](./garch_ann_full_pipeline_v2.ipynb)  
+*End-to-end workflow for calibrating GARCH parameters using neural networks*
+
 
 This notebook explores a **hybrid approach** to calibrating a **GARCH(1,1)** model by combining:
 
