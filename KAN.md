@@ -83,6 +83,43 @@ It can be seen as:
 **An MLP learns weights. A KAN learns laws.**
 
 
+<div style="border-left: 6px solid #2E86C1; background-color: #EBF5FB; padding: 12px 16px; margin: 16px 0; border-radius: 6px;">
+
+### 🔎 KAN as Learned Feature Engineering
+
+A **Kolmogorov–Arnold Network (KAN)** can be interpreted as a neural architecture where  
+**optimal feature engineering is learned jointly with the model itself**.
+
+In a classical pipeline:
+
+**Raw data → Feature engineering → Model**
+
+feature transformations are manually designed (logs, ratios, nonlinearities, domain heuristics).
+
+In a KAN:
+
+$$
+y_i = \sum_j \Phi_{ij}(x_j)
+$$
+
+each $\Phi_{ij}$ is a learnable univariate function acting as an **adaptive feature transform**.
+
+This means the network:
+
+- does not just learn weights  
+- learns **how each variable should be transformed**  
+- makes the feature space itself trainable  
+
+Conceptually, a KAN performs:
+
+**Raw data → Learned nonlinear coordinate system → Linear combination**
+
+👉 **KAN = Neural network + automatic discovery of the right feature representation**
+
+</div>
+
+
+
 # Kolmogorov–Arnold Networks (KAN) — Mathematical Formulation
 
 KANs are neural networks where scalar weights are replaced by learnable functions.
