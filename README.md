@@ -247,12 +247,12 @@ By merging **statistical modeling** with **machine learning**, this work bridges
 
 📄 Details in  : [raed_paper_comments.md](./raed_paper_comments.md)
 
-## Effective Calibration of GARCH(1,1) with Neural Networks
+## Effective Calibration of GARCH(1,1) based on Raed Ideas and comparaison with Clerk- Savelli approach
 
 📄 Study in  : [Calibrate_Paper.md](./Clerk_Savelev/Calibrate_Paper.md)
 
 ---
-## In the following, we implement the Idea of the paper, using advanced concepts
+## Effective Calibration of GARCH(1,1), using advanced concepts
 
 📄 Study in  : [Neural_GARCH_Calibrations.md](./Neural_GARCH_Calibrations.md)
 
