@@ -248,7 +248,7 @@ By merging **statistical modeling** with **machine learning**, this work bridges
 📄 Details in  : [raed_paper_comments.md](./raed_paper_comments.md)
 
 ## A summary of a corrected approach:
-📄 Document in  : [Our_Approach.md](./pdf/Our_Approach.pdf)
+📄 Document in  : [Our_Approach_EN.pdf](./pdf/Our_Approach_EN.pdf)
 
 ## Effective Calibration of GARCH(1,1) based on Raed Ideas and comparaison with Clerk- Savelli approach
 
