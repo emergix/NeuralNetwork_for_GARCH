@@ -51,6 +51,22 @@ See the full calibration process using historical Air Liquide data:
 # GARCH(1,1) — **Hybrid calibration**: ANN (acov_multi) + $$\mu$$ via WLS + MLE (Gaussian & Student‑t)  
 *(Notebook: `garch_ann_full_pipeline_v2.ipynb`, v2 “patches A–C”)*
 
+```python
+# Core calibration workflow
+import tensorflow as tf
+from arch import arch_model
+
+# Neural network calibration
+nn_model = tf.keras.Sequential([...])
+garch_params = nn_model.predict(streaming_data)
+
+# Feed to stochastic model
+heston_model.calibrate(initial_params=garch_params[['VL','persistence']])
+
+# Portfolio optimization
+optimizer.run(volatility_forecast=garch_params['conditional_volatility'])
+
+
 This notebook explores a **hybrid approach** to calibrating a **GARCH(1,1)** model by combining:
 
 - a **statistical** estimate of persistence $$\mu \approx \alpha_1 + \beta_1$$ from autocorrelation decay (WLS),
@@ -209,28 +225,3 @@ Main ideas tested:
 Great for numerical comparison.
 
 
-
-[`garch_ann_full_pipeline_v2.ipynb`](./garch_ann_full_pipeline_v2.ipynb)  
-*End-to-end workflow for calibrating GARCH parameters using neural networks*
-
-Key features:
-- Data preprocessing for financial time series
-- Neural network architecture design (LSTM/GRU)
-- Model training and validation
-- Real-time calibration on streaming data
-- Performance benchmarking vs traditional methods
-
-```python
-# Core calibration workflow
-import tensorflow as tf
-from arch import arch_model
-
-# Neural network calibration
-nn_model = tf.keras.Sequential([...])
-garch_params = nn_model.predict(streaming_data)
-
-# Feed to stochastic model
-heston_model.calibrate(initial_params=garch_params[['VL','persistence']])
-
-# Portfolio optimization
-optimizer.run(volatility_forecast=garch_params['conditional_volatility'])
