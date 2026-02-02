@@ -30,16 +30,7 @@ dv_t &= \kappa(\theta - v_t)\,dt + \sigma \sqrt{v_t}\,dW_t^v
 - \( \sigma \) : volatility of volatility  
 - \( W_t^S \), \( W_t^v \) : Brownian motions with correlation \( \rho \)
 
-### 🔍 Key Features
-
-- **Mean-reverting variance** captures realistic volatility behavior  
-- **Closed-form solution** for European options via Fourier inversion  
-- **Flexible calibration** to volatility surfaces (smile/skew)
-
-### 📄 Calibration Example
-
-See the full calibration process using historical Air Liquide data:
-
+# Calibration of GARCH(1,1) using a simple library 
 👉 A very simple way to do a GARCH calibration is the following:
 
 ```python
@@ -58,9 +49,11 @@ heston_model.calibrate(initial_params=garch_params[['VL','persistence']])
 optimizer.run(volatility_forecast=garch_params['conditional_volatility'])
 ```
 
-👉 The following notebook implements a calibration of GARCH idea , with a lot of refinements
 
-# GARCH(1,1) — **Hybrid calibration**: ANN (acov_multi) + $$\mu$$ via WLS + MLE (Gaussian & Student‑t)  
+
+# Calibration of GARCH(1,1) using **Hybrid Neural Approach**: ANN (acov_multi) + $$\mu$$ via WLS + MLE (Gaussian & Student‑t)  
+
+👉 The following notebook implements a calibration of GARCH idea , with a lot of refinements
 
 [`garch_ann_full_pipeline_v2.ipynb`](./garch_ann_full_pipeline_v2.ipynb)  
 *End-to-end workflow for calibrating GARCH parameters using neural networks*
