@@ -44,12 +44,7 @@ See the full calibration process using historical Air Liquide data:
 [`garch_ann_full_pipeline_v2.ipynb`](./garch_ann_full_pipeline_v2.ipynb)  
 *End-to-end workflow for calibrating GARCH parameters using neural networks*
 
-# GARCH(1,1) — calibration «hybride» : **ANN (acov_multi)** + $$\mu$$ via WLS + MLE (Gauss & Student‑t)  
-*(Notebook : `garch_ann_full_pipeline_v2.ipynb`, v2 “patches A–C”)*
 
-
-# GARCH(1,1) — **Hybrid calibration**: ANN (acov_multi) + $$\mu$$ via WLS + MLE (Gaussian & Student‑t)  
-*(Notebook: `garch_ann_full_pipeline_v2.ipynb`, v2 “patches A–C”)*
 
 ```python
 # Core calibration workflow
@@ -65,7 +60,11 @@ heston_model.calibrate(initial_params=garch_params[['VL','persistence']])
 
 # Portfolio optimization
 optimizer.run(volatility_forecast=garch_params['conditional_volatility'])
+```
 
+
+# GARCH(1,1) — **Hybrid calibration**: ANN (acov_multi) + $$\mu$$ via WLS + MLE (Gaussian & Student‑t)  
+*(Notebook: `garch_ann_full_pipeline_v2.ipynb`, v2 “patches A–C”)*
 
 This notebook explores a **hybrid approach** to calibrating a **GARCH(1,1)** model by combining:
 
