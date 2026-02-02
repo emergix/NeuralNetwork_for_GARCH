@@ -231,3 +231,9 @@ $$
 
 A KAN operates in **function space rather than weight space**.
 
+
+
+## 8) Module Fourni
+
+ → notebook python : [KAN_learning.ipynb](./notebooks/KAN_learning.ipynb)
+
