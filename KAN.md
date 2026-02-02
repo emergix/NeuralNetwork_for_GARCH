@@ -81,3 +81,122 @@ It can be seen as:
 ## Key Sentence to Remember
 
 **An MLP learns weights. A KAN learns laws.**
+
+
+# Kolmogorov–Arnold Networks (KAN) — Mathematical Formulation
+
+KANs are neural networks where scalar weights are replaced by learnable functions.
+
+---
+
+## 1. Kolmogorov–Arnold Theorem
+
+Let  
+
+$$
+f : [0,1]^n \rightarrow \mathbb{R}
+$$
+
+be continuous.
+
+There exist univariate functions  
+
+$$
+\phi_q : \mathbb{R} \rightarrow \mathbb{R}, \quad q = 1,\dots,2n+1
+$$
+
+and  
+
+$$
+\psi_{q,p} : [0,1] \rightarrow \mathbb{R}, \quad p = 1,\dots,n
+$$
+
+such that:
+
+$$
+f(x_1,\dots,x_n) = \sum_{q=1}^{2n+1} \phi_q \left( \sum_{p=1}^{n} \psi_{q,p}(x_p) \right)
+$$
+
+---
+
+## 2. Classical MLP Approximation
+
+$$
+f(x) \approx \sum_{i=1}^{m} a_i \, \sigma(w_i^\top x + b_i)
+$$
+
+---
+
+## 3. KAN Layer Formulation
+
+Let
+
+$$
+x \in \mathbb{R}^{n_{\text{in}}}, \quad y \in \mathbb{R}^{n_{\text{out}}}
+$$
+
+A neuron:
+
+$$
+y_i = \sum_{j=1}^{n_{\text{in}}} \Phi_{ij}(x_j)
+$$
+
+A layer:
+
+$$
+\mathcal{K}(x)_i = \sum_j \Phi_{ij}(x_j)
+$$
+
+---
+
+## 4. Parameterization of Functions
+
+### B-splines
+$$
+\Phi_{ij}(x) = \sum_{k=1}^{K} c_{ijk} B_k(x)
+$$
+
+### Polynomials
+$$
+\Phi_{ij}(x) = \sum_{k=0}^{d} c_{ijk} x^k
+$$
+
+### Radial bases
+$$
+\Phi_{ij}(x) = \sum_k c_{ijk} \exp(-\gamma_k (x-\mu_k)^2)
+$$
+
+---
+
+## 5. Deep KAN Network
+
+$$
+f(x) = \mathcal{K}^{(L)} \circ \dots \circ \mathcal{K}^{(1)}(x)
+$$
+
+Each layer:
+
+$$
+x^{(\ell+1)}_i = \sum_j \Phi^{(\ell)}_{ij}(x^{(\ell)}_j)
+$$
+
+---
+
+## 6. Functional Regularization
+
+Curvature penalty:
+
+$$
+\mathcal{L}_{\text{smooth}} = \lambda \sum_{i,j} \int \left( \frac{d^2}{dx^2} \Phi_{ij}(x) \right)^2 dx
+$$
+
+---
+
+## 7. Formal Summary
+
+$$
+x^{(\ell+1)}_i = \sum_j \Phi^{(\ell)}_{ij}(x^{(\ell)}_j)
+$$
+
+A KAN operates in **function space rather than weight space**.
+
