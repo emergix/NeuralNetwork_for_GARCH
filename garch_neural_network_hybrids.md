@@ -52,6 +52,13 @@ Some approaches embed the GARCH volatility equations directly into neural networ
 
 ---
 
+## 📊 Kolmogoroff Arnold Networks
+
+- **New type of neural networks
+- **Introduction [KAN.md](./KAN.md)
+
+---
+
 ## 📈 Applications in Finance
 
 - **High-frequency trading**: where fast volatility adaptation is critical.
