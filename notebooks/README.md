@@ -61,7 +61,6 @@ optimizer.run(volatility_forecast=garch_params['conditional_volatility'])
 👉 The following notebook implements a calibration of GARCH idea , with a lot of refinements
 
 # GARCH(1,1) — **Hybrid calibration**: ANN (acov_multi) + $$\mu$$ via WLS + MLE (Gaussian & Student‑t)  
-*(Notebook: `garch_ann_full_pipeline_v2.ipynb`, v2 “patches A–C”)*
 
 [`garch_ann_full_pipeline_v2.ipynb`](./garch_ann_full_pipeline_v2.ipynb)  
 *End-to-end workflow for calibrating GARCH parameters using neural networks*
