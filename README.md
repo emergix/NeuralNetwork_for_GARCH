@@ -254,7 +254,7 @@ By merging **statistical modeling** with **machine learning**, this work bridges
 ---
 ## In the following, we implement the Idea of the paper, using advanced concepts
 
-📄 Study in  : [README.md](./notebook/README.md)
+📄 Study in  : [Neural_GARCH_Calibrations.md](./Neural_GARCH_Calibrations.md)
 
 
 ## Conclusion
