@@ -19,7 +19,7 @@ dv_t &= \kappa(\theta - v_t)\,dt + \sigma \sqrt{v_t}\,dW_t^v
 # Calibration of GARCH(1,1) using a simple library 
 👉 A very simple way to do a GARCH calibration is the following:
 
-[`Garch_Calibration.ipynb`](./garch_ann_full_pipeline_v2.ipynb)  
+[`Garch_Calibration.ipynb`](./notebooks/Garch_Calibration.ipynb)  
 
 ```python
 # Core calibration workflow
@@ -43,7 +43,7 @@ optimizer.run(volatility_forecast=garch_params['conditional_volatility'])
 
 👉 The following notebook implements a calibration of GARCH idea , with a lot of refinements
 
-[`garch_ann_full_pipeline_v2.ipynb`](./garch_ann_full_pipeline_v2.ipynb)  
+[`garch_ann_full_pipeline_v2.ipynb`](./notebooks/garch_ann_full_pipeline_v2.ipynb)  
 *End-to-end workflow for calibrating GARCH parameters using neural networks*
 
 
